@@ -387,7 +387,7 @@ var app = function() {
         elems.forEach(function(html) {
             var switchery = new Switchery(html, {
                 size: 'small',
-                color: '#27B6AF',
+                color: '#0090DA',
                 secondaryColor: '#B3B8C3'
             });
         });

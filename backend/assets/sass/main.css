@@ -1,0 +1,5220 @@
+/*
+ *
+ *   NEUBOARD - Responsive Admin Theme
+ *   Copyright 2014 Authentic Goods Co. http://authenticgoods.co
+ *
+*/
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+html {
+  height: 100%;
+  font-size: 100%; }
+
+/* line 5, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+body {
+  color: #565656;
+  background: #f3f3f3;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  padding: 0px;
+  margin: 0px;
+  min-height: 100%;
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 17, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+a:link, a:visited {
+  text-decoration: none;
+  outline: none;
+  color: #222222; }
+
+/* line 22, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+a:hover, a:active {
+  outline: none;
+  text-decoration: none;
+  color: #999999; }
+
+/* line 27, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #424856;
+  margin: 0; }
+
+/* line 32, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+h1, .h1 {
+  font-size: 1.375em; }
+
+/* line 37, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+h2, .h2 {
+  font-size: 1.188em; }
+
+/* line 41, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+h3, .h3 {
+  font-size: 1.063em; }
+
+/* line 45, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+h4, .h4 {
+  font-size: 0.938em; }
+
+/* line 49, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+h5, .h5 {
+  font-size: 0.813em; }
+
+/* line 53, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+h6, .h6 {
+  font-size: 0.75em; }
+
+/* line 56, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+p {
+  font-size: 0.875em; }
+
+/* line 59, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+/* line 63, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+img {
+  max-width: 100%; }
+
+/* line 66, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+::selection {
+  background: #fff7dd; }
+
+/* line 69, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+::-moz-selection {
+  background: #fff7dd; }
+
+/* line 73, /Users/mark/appsson-theme/backend/assets/sass/_base.scss */
+canvas {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_page-loader.scss */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+/* line 8, /Users/mark/appsson-theme/backend/assets/sass/_page-loader.scss */
+.pace .pace-progress {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #66cac4;
+  -webkit-transition: -webkit-transform 0.3s, width 1s;
+  -moz-transition: width 1s;
+  -o-transform: width 1s;
+  transition: transform 0.3s, width 1s;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  pointer-events: none; }
+
+/* line 24, /Users/mark/appsson-theme/backend/assets/sass/_page-loader.scss */
+.pace.pace-active .pace-progress {
+  -webkit-transform: translateY(0);
+  transform: translateY(0); }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+#header {
+  z-index: 200;
+  height: 60px;
+  position: absolute;
+  width: 100%;
+  margin-right: 0; }
+  /* line 7, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .brand {
+    float: left;
+    width: 240px;
+    height: 60px;
+    padding: 0 0 0 10px;
+    position: relative; }
+  /* line 14, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .logo {
+    font-size: 1.188em;
+    text-transform: uppercase;
+    padding: 17px 0 0 10px;
+    display: inline-block; }
+  /* line 20, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .logo img {
+    margin-right: 6px;
+    margin-top: -4px; }
+  /* line 24, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .logo span {
+    font-weight: 700; }
+  /* line 27, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .navbar-nav {
+    margin: 0; }
+  /* line 30, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .navbar-left {
+    float: left; }
+  /* line 33, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .navbar-right {
+    float: right; }
+  /* line 36, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .btn i {
+    padding: 0; }
+  /* line 42, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header button.sidebar-toggle,
+  #header button#toggle-profile,
+  #header button#toggle-fullscreen,
+  #header button.options {
+    width: 60px;
+    height: 60px;
+    font-size: 1.125em;
+    padding: 20px;
+    cursor: pointer;
+    float: left;
+    background-color: transparent;
+    border-radius: none;
+    border: none; }
+  /* line 55, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header button.sidebar-toggle:hover, #header button.sidebar-toggle:active,
+  #header button#toggle-profile:hover, #header button#toggle-profile:active,
+  #header button#toggle-fullscreen:hover, #header button#toggle-fullscreen:active {
+    box-shadow: none;
+    outline: none !important;
+    border: none; }
+  /* line 60, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header button.sidebar-toggle:focus, #header button#toggle-profile:focus, #header button#toggle-fullscreen:focus {
+    outline: none;
+    border: none; }
+  /* line 64, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .search {
+    -webkit-appearance: none !important;
+    color: #282323;
+    outline: 0;
+    height: 30px;
+    width: 180px;
+    padding: 7px 15px;
+    font-size: 0.75em;
+    font-weight: normal;
+    vertical-align: top;
+    background-color: #EDF1F2;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    border: none;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    margin: 16px 0 0 20px;
+    position: relative; }
+  /* line 84, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .btn-search {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+    background: none; }
+  /* line 90, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .fa-search {
+    font-size: 1.063em;
+    color: #212121; }
+  /* line 94, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .nav li.profile > a > .meta {
+    display: table;
+    width: 100%; }
+  /* line 98, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .nav li.profile > a > .meta > .avatar {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 32px;
+    height: 32px; }
+  /* line 104, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .nav li.profile > a > .meta > .text {
+    font-size: 0.75em;
+    font-weight: 600;
+    padding: 0 5px; }
+  /* line 109, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .nav li.profile > a {
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+    color: #13161C;
+    text-shadow: none; }
+  /* line 116, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .nav li.profile > a:hover, #header .nav li.profile > a:active, #header .nav li.profile > a:focus {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    color: #13161C; }
+  /* line 122, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .navbar-right > .dropdown > .dropdown-menu {
+    position: absolute;
+    margin-top: 5px;
+    left: 5px;
+    background-color: #fff;
+    border: 1px solid #e0e7e8;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08); }
+  /* line 132, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .arrow {
+    border-width: 8px;
+    z-index: 10; }
+  /* line 136, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .arrow, #header .arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid; }
+  /* line 144, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .arrow:after {
+    border-width: 7px;
+    content: ""; }
+  /* line 148, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .arrow.top {
+    left: 50%;
+    margin-left: -8px;
+    border-top-width: 0;
+    border-bottom-color: #eee;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    top: -8px; }
+  /* line 156, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .arrow.top:after {
+    content: " ";
+    top: 1px;
+    margin-left: -7px;
+    border-top-width: 0;
+    border-bottom-color: #fff; }
+  /* line 163, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .dropdown-menu > li > a > .icon {
+    display: inline-block;
+    min-width: 14px;
+    text-align: center;
+    margin-right: 5px; }
+  /* line 169, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .dropdown-menu > li.active > a, #header .dropdown-menu > li:active > a {
+    background-color: #fbfbfb;
+    color: #444; }
+  /* line 173, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .dropdown-menu > li.active > a:hover, #header .dropdown-menu > li:active > a:hover {
+    background-color: #fbfbfb;
+    color: #373737; }
+  /* line 177, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .profile ul > li:first-child {
+    padding: 10px; }
+  /* line 180, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .profile ul > li h5, #header .profile ul > li p {
+    font-size: 0.813em;
+    margin: 0;
+    padding: 0; }
+  /* line 185, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .profile ul > li .progress {
+    margin-bottom: 0; }
+
+@media (max-width: 789px) {
+  /* line 190, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .search {
+    width: 155px; } }
+
+@media (max-width: 767px) {
+  /* line 195, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .brand {
+    width: 100%;
+    padding: 0 0 0 10px;
+    text-align: center; }
+  /* line 200, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .logo {
+    font-size: 1.375em;
+    padding: 14px 0 0 0; }
+  /* line 204, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .logo img {
+    width: 25px;
+    margin-right: 5px; }
+  /* line 208, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .navbar-left {
+    position: absolute;
+    left: 0; }
+  /* line 212, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .navbar-right {
+    position: absolute;
+    right: 0; } }
+
+@media only screen and (max-width: 660px) {
+  /* line 220, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .user-nav ul {
+    padding-left: 0; }
+  /* line 223, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .toggle-navigation.toggle-left {
+    float: left; }
+  /* line 226, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  .user-nav ul li {
+    font-size: 0.75em; } }
+
+@media only screen and (max-width: 479px) {
+  /* line 232, /Users/mark/appsson-theme/backend/assets/sass/_header.scss */
+  #header .dropdown.messages {
+    display: none; } }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar {
+  position: absolute;
+  min-height: 100%;
+  width: 240px;
+  padding-top: 60px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+/* line 8, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav a {
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+/* line 14, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav i {
+  font-size: 1em;
+  margin-right: 5px; }
+
+/* line 18, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav .nav-sub {
+  list-style: none;
+  padding: 0;
+  display: none; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav .nav-sub li > a {
+  padding-right: 10px;
+  font-size: 0.813em;
+  padding: 8px 0 8px 10px;
+  display: block; }
+
+/* line 29, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav > li > .nav-sub > li > a {
+  padding-left: 45px; }
+
+/* line 32, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav > li > .nav-sub > li > .nav-sub > li > a {
+  padding-left: 55px; }
+
+/* line 35, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > a {
+  padding-left: 65px; }
+
+/* line 38, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > a {
+  padding-left: 70px; }
+
+/* line 41, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > a {
+  padding-left: 75px; }
+
+/* line 44, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .sidebar .nav > li > .nav-sub > li > a {
+  padding-left: 25px; }
+
+/* line 47, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .sidebar .nav > li > .nav-sub > li > .nav-sub > li > a {
+  padding-left: 35px; }
+
+/* line 50, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .sidebar .nav > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > a {
+  padding-left: 45px; }
+
+/* line 53, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .sidebar .nav > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > .nav-sub > li > a {
+  padding-left: 55px; }
+
+/* line 56, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav .nav-sub .nav-dropdown > a {
+  padding-right: 30px; }
+
+/* line 59, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav .nav-sub > .open > a, .sidebar .nav .nav-sub > .open > a:focus, .sidebar .nav .nav-sub > .open > a:hover {
+  background-color: transparent;
+  border-color: transparent; }
+
+/* line 63, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav-pills {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* line 67, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav-pills > li > a {
+  padding: 9px 10px;
+  font-size: 0.875em; }
+
+/* line 72, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-profile {
+  padding: 20px; }
+  /* line 74, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-profile .profile-image {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: auto; }
+  /* line 80, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-profile .avatar i {
+    left: 70px; }
+  /* line 83, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-profile .profile-body {
+    padding: 0;
+    text-align: center; }
+    /* line 86, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body h4 {
+      color: #f5f5f5;
+      margin: 10px 0 0 0;
+      font-size: 14px;
+      font-weight: 600; }
+    /* line 92, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body .title {
+      color: #8f939e;
+      font-size: 12px; }
+    /* line 96, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body .dropdown-menu .divider {
+      height: 1px;
+      margin: 3px 0;
+      overflow: hidden;
+      background-color: #e5e5e5; }
+    /* line 102, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu {
+      position: absolute;
+      margin-top: 20px;
+      left: 20px;
+      background-color: #fff;
+      border: 1px solid #e0e7e8;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+      border-style: solid; }
+    /* line 113, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu:before {
+      bottom: 100%;
+      left: 85%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #fff;
+      border-width: 8px;
+      margin-left: -16px;
+      top: -16px; }
+    /* line 128, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu li a, .sidebar-profile .profile-body.dropdown > .dropdown-menu li a:active {
+      font-size: 12px; }
+    /* line 131, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu li a:hover {
+      background-color: #c5c5c5;
+      color: #fff; }
+    /* line 136, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu .profile-progress {
+      padding: 10px; }
+    /* line 139, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu .progress {
+      margin-bottom: 0; }
+    /* line 142, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu h5 {
+      margin: 0;
+      padding: 0; }
+    /* line 146, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-profile .profile-body.dropdown > .dropdown-menu .icon {
+      margin-right: 5px; }
+
+/* line 152, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-header {
+  color: #6F737E;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  padding: 10px 10px 5px;
+  text-transform: uppercase; }
+
+/* line 160, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left a {
+  color: #B3B8C3; }
+
+/* line 163, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left a:focus, .sidebar-left a:hover {
+  color: #fff;
+  background-color: transparent; }
+
+/* line 167, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left .active > a, .sidebar-left .active > a:focus, .sidebar-left .active > a:hover {
+  color: #fff; }
+
+/* line 170, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left .disabled > a, .sidebar-left .disabled > a:focus, .sidebar-left .disabled > a:hover {
+  color: #5c606b;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed; }
+
+/* line 176, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left .sidebar-profile .media-body h4 {
+  color: #f5f5f5; }
+
+/* line 179, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .sidebar-left .nav > li.open > a {
+  color: #B3B8C3;
+  background-color: transparent; }
+
+/* line 183, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left .nav > li > a:focus {
+  color: #fff;
+  background-color: transparent; }
+
+/* line 187, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left .nav > .disabled > a, .sidebar-left .nav > .disabled > a:focus, .sidebar-left .nav > .disabled > a:hover {
+  color: #5c606b;
+  background-color: transparent; }
+
+/* line 191, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-left .nav-sub li.open > a {
+  color: #fff;
+  background-color: transparent; }
+
+/* line 195, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar + .main-content-wrapper {
+  width: 100%; }
+
+/* line 199, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .sidebar .sidebar-profile {
+  padding: 15px 0;
+  margin: -20px 0 10px 0;
+  display: none; }
+  /* line 203, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .sidebar-profile .profile-image {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: auto; }
+  /* line 209, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .sidebar-profile .profile-body {
+    padding: 0; }
+    /* line 211, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-mini .sidebar .sidebar-profile .profile-body h4, .sidebar-mini .sidebar .sidebar-profile .profile-body .title {
+      display: none; }
+    /* line 214, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-mini .sidebar .sidebar-profile .profile-body.dropdown > .dropdown-menu {
+      position: absolute;
+      margin-top: 12px;
+      left: 4px; }
+    /* line 219, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+    .sidebar-mini .sidebar .sidebar-profile .profile-body.dropdown > .dropdown-menu:before {
+      left: 18%; }
+
+/* line 224, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .sidebar .avatar i {
+  position: absolute;
+  left: 2px;
+  top: 0; }
+
+@media (max-width: 767px) {
+  /* line 231, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar {
+    left: -240px; }
+  /* line 234, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-opened .sidebar-left {
+    display: block;
+    left: 0; }
+  /* line 238, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-opened .sidebar-left + .main-content-wrapper {
+    left: 240px;
+    overflow: hidden; }
+  /* line 242, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-opened {
+    overflow-x: hidden; } }
+
+@media (min-width: 768px) {
+  /* line 247, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar {
+    display: block; }
+  /* line 250, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar {
+    width: 50px;
+    padding-top: 80px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; }
+  /* line 255, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li.nav-dropdown.nav-dropdown-open > a, .sidebar-mini .sidebar .nav > li.nav-dropdown:hover > a {
+    border-bottom-right-radius: 0; }
+  /* line 258, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li.nav-dropdown > a:after {
+    display: none;
+    content: "";
+    top: 12px;
+    left: 34px;
+    font-size: 0.625em; }
+  /* line 265, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li > a {
+    padding: 10px 9px;
+    white-space: nowrap;
+    overflow: hidden; }
+  /* line 270, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li a .badge, .sidebar-mini .sidebar .nav > li a .label {
+    display: none; }
+  /* line 273, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li > a > i:first-child {
+    margin-right: 10px;
+    width: 22.28px; }
+  /* line 277, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li > .nav-sub {
+    position: absolute;
+    left: 50px;
+    margin-top: 0;
+    padding-bottom: 2px;
+    display: none !important;
+    border-radius: 0 0 4px; }
+  /* line 285, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li.nav-dropdown-open, .sidebar-mini .sidebar .nav > li:hover {
+    width: 240px;
+    z-index: 10; }
+  /* line 289, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li.nav-dropdown-open a, .sidebar-mini .sidebar .nav > li:hover a {
+    display: block;
+    overflow: visible;
+    white-space: normal; }
+  /* line 294, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li.nav-dropdown-open a .badge, .sidebar-mini .sidebar .nav > li.nav-dropdown-open a .label, .sidebar-mini .sidebar .nav > li:hover a .badge, .sidebar-mini .sidebar .nav > li:hover a .label {
+    display: block; }
+  /* line 297, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav > li.nav-dropdown-open > .nav-sub, .sidebar-mini .sidebar .nav > li:hover > .nav-sub {
+    display: block !important;
+    z-index: 10; }
+  /* line 301, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav-pills {
+    margin-left: 5px;
+    margin-right: 5px; }
+  /* line 305, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav-pills > li.nav-dropdown-open, .sidebar-mini .sidebar .nav-pills > li:hover {
+    width: 235px; }
+  /* line 308, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav-pills > li > a > i {
+    margin-right: 10px;
+    width: 23px; }
+  /* line 312, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav-pills > li.nav-dropdown > a {
+    padding-right: 10px; }
+  /* line 315, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav-pills > li > .nav-sub {
+    left: 45px;
+    width: 190px; }
+  /* line 319, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav-pills > li > .nav-sub a {
+    padding-right: 5px; }
+  /* line 322, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .nav-pills > li > .nav-sub .nav-dropdown > a {
+    padding-right: 30px; }
+  /* line 325, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar .sidebar-header, .sidebar-mini .sidebar .sidebar-profile, .sidebar-mini .sidebar .sidebar-summary {
+    display: none; }
+  /* line 328, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar + .main-content-wrapper {
+    margin-left: 240px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    width: auto; }
+  /* line 333, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .navbar .navbar-brand-group {
+    width: 100px; }
+  /* line 336, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .navbar .navbar-brand-group .navbar-brand {
+    width: 50px; }
+  /* line 339, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-mini .sidebar + .main-content-wrapper {
+    margin-left: 50px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out; } }
+
+@media only screen and (max-width: 660px) {
+  /* line 345, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar-toggle {
+    margin-left: 0;
+    width: 100%; }
+  /* line 349, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .main-content-toggle-left {
+    margin-left: 660px; }
+  /* line 352, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .user-nav ul li {
+    font-size: 0.75em; } }
+
+/* line 357, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar div.divider {
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  background: #13161C; }
+
+/* line 364, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .nav-pills > li > a > .badge {
+  margin: 3px 0; }
+
+/* line 369, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar .setting-list {
+  padding: 0 20px 20px 20px; }
+  /* line 371, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar .setting-list label {
+    color: #B3B8C3;
+    font-size: 0.75em;
+    margin-bottom: 10px; }
+  /* line 376, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+  .sidebar .setting-list label:hover {
+    cursor: pointer; }
+
+/* line 382, /Users/mark/appsson-theme/backend/assets/sass/_left-sidebar.scss */
+.sidebar-mini .setting-list {
+  display: none; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+#main-wrapper {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden; }
+
+/* line 5, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.main-content-wrapper {
+  margin-right: 0;
+  padding-top: 60px;
+  background: #F0F3F3;
+  position: relative; }
+  /* line 10, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+  .main-content-wrapper #main-content {
+    padding: 15px 15px 0 15px;
+    width: 100%; }
+    /* line 13, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+    .main-content-wrapper #main-content .h1 {
+      margin: 0;
+      padding: 0px 10px 40px 10px;
+      float: left;
+      line-height: 10px;
+      font-weight: 300;
+      font-size: 1.5em; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.main-content-toggle-left {
+  margin-left: 0; }
+
+/* line 26, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.main-content-toggle-right {
+  margin-right: 240px; }
+
+/* line 29, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader {
+  padding: 15px;
+  border-bottom: 1px solid #dce0e6;
+  border-top: 1px solid #eee;
+  background: #fff;
+  position: relative; }
+
+/* line 36, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader h2 {
+  font-weight: 300;
+  margin: 0;
+  color: #fff; }
+
+/* line 41, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader .description {
+  margin: 0;
+  margin-top: 5px;
+  color: #fff; }
+
+/* line 46, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader .breadcrumb-wrapper {
+  position: absolute;
+  top: 13px;
+  right: 25px; }
+
+/* line 51, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader .breadcrumb-wrapper .label {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 0.688em;
+  font-weight: normal;
+  display: inline-block; }
+
+/* line 58, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader .breadcrumb {
+  background: none;
+  display: inline-block;
+  padding: 0; }
+
+/* line 63, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader .breadcrumb li {
+  font-size: 0.75em; }
+
+/* line 66, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader .breadcrumb li.active {
+  color: #333; }
+
+/* line 69, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+.pageheader .breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #515050;
+  font-family: FontAwesome;
+  content: "\f105"; }
+
+@media (max-width: 767px) {
+  /* line 77, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+  .main-content-wrapper {
+    margin-left: 0; } }
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  /* Main Content */
+  /* line 84, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+  #main-content .h1 {
+    font-size: 1.5em; } }
+
+@media only screen and (max-width: 660px) {
+  /* line 91, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+  .main-content-toggle-left {
+    margin-left: 660px; } }
+
+@media only screen and (max-width: 479px) {
+  /* Main Content */
+  /* line 98, /Users/mark/appsson-theme/backend/assets/sass/_main-content.scss */
+  #main-content .h1 {
+    font-size: 22px; } }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#sidebar-right {
+  width: 240px;
+  height: 100%;
+  background: #fff;
+  z-index: 100;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  padding-top: 60px;
+  display: none;
+  box-shadow: 0 0 9px rgba(190, 190, 190, 0.5); }
+
+/* line 16, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+.sidebar-right-open {
+  display: block !important; }
+
+/* line 20, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#sidebar-right .sidebar-title {
+  color: #e8e8e8;
+  padding: 10px;
+  background-color: #1d212a;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.75em; }
+
+/* line 29, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper .heading {
+  position: relative;
+  border-bottom: solid thin #F2F2F2; }
+  /* line 32, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-list-wrapper .heading ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  /* line 37, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-list-wrapper .heading ul li {
+    display: inline-block;
+    padding: 10px; }
+  /* line 41, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-list-wrapper .heading ul li.new-contact a {
+    vertical-align: sub; }
+  /* line 44, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-list-wrapper .heading .search {
+    -webkit-appearance: none !important;
+    color: #282323;
+    outline: 0;
+    height: 30px;
+    width: 180px;
+    padding: 7px 15px;
+    font-size: 0.75em;
+    font-weight: normal;
+    vertical-align: top;
+    background-color: #EDF1F2;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border-radius: 30px;
+    border: none;
+    transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    position: relative; }
+  /* line 67, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-list-wrapper .heading .btn-search {
+    position: absolute;
+    background: none;
+    right: 12px;
+    top: 12px; }
+
+/* line 75, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper #contact-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+/* line 80, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper #contact-list ul li {
+  border-bottom: solid thin #F2F2F2;
+  padding: 10px; }
+
+/* line 84, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper #contact-list ul li .row {
+  margin: 0; }
+
+/* line 87, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper #contact-list ul li:hover {
+  cursor: pointer;
+  background-color: #f4f7f7; }
+
+/* line 91, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper #contact-list .avatar {
+  width: 40px;
+  height: 40px; }
+
+/* line 95, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper #contact-list .avatar i {
+  border: solid 1px #fff;
+  width: 10px;
+  height: 10px;
+  margin: 0; }
+
+/* line 101, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-list-wrapper #contact-list .location i {
+  font-size: 0.813em; }
+
+/* line 106, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+#contact-user {
+  position: fixed;
+  height: 55px;
+  width: 240px;
+  bottom: 0;
+  text-align: center; }
+  /* line 112, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-user .chat-user {
+    padding: 20px 8px 8px 8px;
+    background-color: #F0F3F3;
+    height: 55px;
+    width: 80px;
+    float: left; }
+  /* line 119, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-user .email-user {
+    padding: 20px 8px 8px 8px;
+    background-color: #F0F3F3;
+    height: 55px;
+    width: 80px;
+    float: left; }
+  /* line 126, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-user .call-user {
+    padding: 20px 8px 8px 8px;
+    background-color: #F0F3F3;
+    height: 55px;
+    width: 80px;
+    float: left; }
+  /* line 133, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-user .chat-user.active, #contact-user .email-user.active, #contact-user .call-user.active {
+    background-color: #1D212A; }
+  /* line 136, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-user .chat-user:hover, #contact-user .email-user:hover, #contact-user .call-user:hover {
+    background-color: #1D212A;
+    color: #F0F3F3;
+    cursor: pointer; }
+  /* line 141, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-user .chat-user:hover span, #contact-user .email-user:hover span, #contact-user .call-user:hover span {
+    color: #F0F3F3; }
+  /* line 144, /Users/mark/appsson-theme/backend/assets/sass/_right-sidebar.scss */
+  #contact-user .chat-user.active > span, #contact-user .email-user.active > span, #contact-user .call-user.active > span {
+    color: #F0F3F3; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn {
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  padding: 8px 14px;
+  margin-bottom: 5px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear; }
+  /* line 11, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+  .btn:hover, .btn:focus {
+    outline: none; }
+  /* line 14, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+  .btn:active, .btn.active {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important; }
+  /* line 20, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+  .btn.disabled, .btn[disabled], .btn fieldset[disabled] .btn {
+    background-color: #197131;
+    color: rgba(255, 255, 255, 0.75);
+    opacity: 0.7;
+    filter: alpha(opacity=70); }
+
+/* line 30, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn i {
+  padding: 0 5px; }
+
+/* Default Buttons*/
+/* line 36, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default, a.btn-default:link, a.btn-default:visited {
+  color: #ffffff;
+  background-color: #197131;
+  outline: none !important; }
+
+/* line 43, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+a.btn-default:hover,
+a.btn-default:active {
+  color: #ffffff;
+  background-color: #20923f;
+  border-color: #20923f; }
+
+/* line 53, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #ffffff;
+  background-color: #20923f;
+  border-color: #20923f; }
+
+/* line 61, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background: #197131;
+  border-color: #197131; }
+
+/* line 79, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default.disabled, .btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #197131;
+  border-color: #197131; }
+
+/* line 84, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary, a.btn-primary:link, a.btn-primary:visited {
+  color: #717171;
+  background-color: #d6d6d6; }
+
+/* line 89, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+a.btn-primary:hover, a.btn-primary:active {
+  color: #ffffff;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9; }
+
+/* line 99, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #d9d9d9;
+  border-color: #d9d9d9; }
+
+/* line 107, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background: #c5c5c5;
+  border-color: #c5c5c5; }
+
+/* line 126, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #c5c5c5;
+  border-color: #c5c5c5; }
+
+/* line 131, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info {
+  color: #ffffff;
+  background-color: #1F7BB6; }
+
+/* line 137, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info, a.btn-info:link,
+a.btn-info:visited {
+  color: #ffffff;
+  background-color: #1F7BB6; }
+
+/* line 143, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+a.btn-info:hover,
+a.btn-info:active {
+  color: #ffffff;
+  background-color: #2593d9; }
+
+/* line 152, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #2593d9;
+  border-color: #2593d9; }
+
+/* line 160, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  background: #1F7BB6;
+  border-color: #1F7BB6; }
+
+/* line 179, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #1F7BB6;
+  border-color: #1F7BB6; }
+
+/* line 184, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger {
+  color: #ffffff;
+  background-color: #e25d5d; }
+
+/* line 193, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #e88080;
+  border-color: #e88080; }
+
+/* line 201, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  background: #e88080;
+  border-color: #e88080; }
+
+/* line 220, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #e25d5d;
+  border-color: #e25d5d; }
+
+/* line 225, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success {
+  color: #ffffff;
+  background-color: #0090DA; }
+
+/* line 234, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #04aaff;
+  border-color: #04aaff; }
+
+/* line 242, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background: #0090DA;
+  border-color: #0090DA; }
+
+/* line 261, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #0090DA;
+  border-color: #0090DA; }
+
+/* line 266, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning {
+  color: #ffffff;
+  background-color: #F0F3F3; }
+
+/* line 275, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #F0F3F3;
+  border-color: #F0F3F3; }
+
+/* line 283, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background: white;
+  border-color: white; }
+
+/* line 302, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #F0F3F3;
+  border-color: #F0F3F3; }
+
+/* 3d Buttons*/
+/* line 308, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn.btn-3d {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+/* line 314, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn.btn-3d:active {
+  -webkit-transform: translate(0, 3px);
+  -moz-transform: translate(0, 3px);
+  transform: translate(0, 3px); }
+
+/* line 319, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default.btn-3d {
+  -webkit-box-shadow: 0px 6px 0px #858e93;
+  -moz-box-shadow: 0px 6px 0px #858e93;
+  box-shadow: 0px 6px 0px #858e93; }
+
+/* line 325, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default.btn-3d:hover,
+.btn-default.btn-3d:focus {
+  background-color: #197131; }
+
+/* line 328, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default.btn-3d:active {
+  -webkit-box-shadow: 0px 2px 0px #858e93;
+  -moz-box-shadow: 0px 2px 0px #858e93;
+  box-shadow: 0px 2px 0px #858e93; }
+
+/* line 333, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default.btn-3d:hover, .btn-default.btn-3d:focus {
+  background-color: #197131; }
+
+/* line 336, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary.btn-3d {
+  -webkit-box-shadow: 0px 6px 0px #4d617f;
+  -moz-box-shadow: 0px 6px 0px #4d617f;
+  box-shadow: 0px 6px 0px #4d617f; }
+
+/* line 341, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary.btn-3d:active {
+  -webkit-box-shadow: 0px 2px 0px #4d617f;
+  -moz-box-shadow: 0px 2px 0px #4d617f;
+  box-shadow: 0px 2px 0px #4d617f; }
+
+/* line 346, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary.btn-3d:hover, .btn-primary.btn-3d:focus {
+  background-color: #c5c5c5; }
+
+/* line 349, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success.btn-3d {
+  -webkit-box-shadow: 0px 6px 0px #24aca5;
+  -moz-box-shadow: 0px 6px 0px #24aca5;
+  box-shadow: 0px 6px 0px #24aca5; }
+
+/* line 354, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success.btn-3d:active {
+  -webkit-box-shadow: 0px 2px 0px #24aca5;
+  -moz-box-shadow: 0px 2px 0px #24aca5;
+  box-shadow: 0px 2px 0px #24aca5; }
+
+/* line 359, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success.btn-3d:hover, .btn-success.btn-3d:focus {
+  background-color: #0090DA; }
+
+/* line 362, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info.btn-3d {
+  -webkit-box-shadow: 0px 6px 0px #2273a5;
+  -moz-box-shadow: 0px 6px 0px #2273a5;
+  box-shadow: 0px 6px 0px #2273a5; }
+
+/* line 367, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info.btn-3d:active {
+  -webkit-box-shadow: 0px 2px 0px #2273a5;
+  -moz-box-shadow: 0px 2px 0px #2273a5;
+  box-shadow: 0px 2px 0px #2273a5; }
+
+/* line 372, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info.btn-3d:hover, .btn-info.btn-3d:focus {
+  background-color: #1F7BB6; }
+
+/* line 375, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning.btn-3d {
+  -webkit-box-shadow: 0px 6px 0px #dbbd7d;
+  -moz-box-shadow: 0px 6px 0px #dbbd7d;
+  box-shadow: 0px 6px 0px #dbbd7d; }
+
+/* line 380, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning.btn-3d:active {
+  -webkit-box-shadow: 0px 2px 0px #d6ae11;
+  -moz-box-shadow: 0px 2px 0px #d6ae11;
+  box-shadow: 0px 2px 0px #d6ae11; }
+
+/* line 385, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning.btn-3d:hover, .btn-warning.btn-3d:focus {
+  background-color: #F0F3F3; }
+
+/* line 388, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger.btn-3d {
+  -webkit-box-shadow: 0px 6px 0px #c94034;
+  -moz-box-shadow: 0px 6px 0px #c94034;
+  box-shadow: 0px 6px 0px #c94034; }
+
+/* line 393, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger.btn-3d:active {
+  -webkit-box-shadow: 0px 2px 0px #c94034;
+  -moz-box-shadow: 0px 2px 0px #c94034;
+  box-shadow: 0px 2px 0px #c94034; }
+
+/* line 398, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger.btn-3d:hover, .btn-danger.btn-3d:focus {
+  background-color: #e25d5d; }
+
+/* square buttons */
+/* line 402, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-square {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+
+/* Transparent buttons */
+/* line 406, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default.btn-trans {
+  color: #197131;
+  background-color: transparent;
+  border: solid thin #197131; }
+
+/* line 411, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-default.btn-trans:hover, .btn-default.btn-trans:active, .btn-default.btn-trans:focus {
+  color: #fff;
+  background-color: #197131;
+  border: solid thin #197131; }
+
+/* line 416, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary.btn-trans {
+  color: #c5c5c5;
+  background-color: transparent;
+  border: solid thin #c5c5c5; }
+
+/* line 421, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-primary.btn-trans:hover, .btn-primary.btn-trans:active, .btn-primary.btn-trans:focus {
+  color: #fff;
+  background-color: #c5c5c5;
+  border: solid thin #c5c5c5; }
+
+/* line 426, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success.btn-trans {
+  color: #0090DA;
+  background-color: transparent;
+  border: solid thin #0090DA; }
+
+/* line 431, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-success.btn-trans:hover, .btn-success.btn-trans:active, .btn-success.btn-trans:focus {
+  color: #fff;
+  background-color: #0090DA;
+  border: solid thin #0090DA; }
+
+/* line 436, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info.btn-trans {
+  color: #1F7BB6;
+  background-color: transparent;
+  border: solid thin #1F7BB6; }
+
+/* line 441, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-info.btn-trans:hover, .btn-info.btn-trans:active, .btn-info.btn-trans:focus {
+  color: #fff;
+  background-color: #1F7BB6;
+  border: solid thin #1F7BB6; }
+
+/* line 446, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning.btn-trans {
+  color: #F0F3F3;
+  background-color: transparent;
+  border: solid thin #F0F3F3; }
+
+/* line 451, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-warning.btn-trans:hover, .btn-warning.btn-trans:active, .btn-warning.btn-trans:focus {
+  color: #fff;
+  background-color: #F0F3F3;
+  border: solid thin #F0F3F3; }
+
+/* line 456, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger.btn-trans {
+  color: #e25d5d;
+  background-color: transparent;
+  border: solid thin #e25d5d; }
+
+/* line 461, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-danger.btn-trans:hover, .btn-danger.btn-trans:active, .btn-danger.btn-trans:focus {
+  color: #fff;
+  background-color: #e25d5d;
+  border: solid thin #e25d5d; }
+
+/* Button Sizes */
+/* line 467, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 1.125em;
+  line-height: 1.33; }
+
+/* line 472, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 478, /Users/mark/appsson-theme/backend/assets/sass/_buttons.scss */
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_profile-status.scss */
+.avatar {
+  position: relative;
+  display: block; }
+
+/* line 6, /Users/mark/appsson-theme/backend/assets/sass/_profile-status.scss */
+.avatar i {
+  position: absolute;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  margin: 1px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100%; }
+
+/* line 17, /Users/mark/appsson-theme/backend/assets/sass/_profile-status.scss */
+.avatar i.on {
+  background-color: #0090DA; }
+
+/* line 21, /Users/mark/appsson-theme/backend/assets/sass/_profile-status.scss */
+.avatar i.off {
+  background-color: #197131; }
+
+/* line 25, /Users/mark/appsson-theme/backend/assets/sass/_profile-status.scss */
+.avatar i.busy {
+  background-color: #e25d5d; }
+
+/* line 29, /Users/mark/appsson-theme/backend/assets/sass/_profile-status.scss */
+.avatar i.away {
+  background-color: #F0F3F3; }
+
+/* line 33, /Users/mark/appsson-theme/backend/assets/sass/_profile-status.scss */
+.border-dark {
+  border-color: #13161C; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress {
+  display: block;
+  margin-bottom: 15px;
+  background-color: #e6ebed;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+
+/* line 9, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 0.75em;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.6s ease;
+  -o-transition: width 0.6s ease;
+  transition: width 0.6s ease; }
+
+/* line 25, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress.progress-sm {
+  height: 15px; }
+
+/* line 28, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress.progress-xs {
+  height: 6px; }
+
+/* line 31, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress .progress-bar {
+  background-color: #c5c5c5;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+
+/* line 37, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress .progress-bar.progress-bar-success {
+  background-color: #0090DA; }
+
+/* line 41, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress .progress-bar.progress-bar-info {
+  background-color: #1F7BB6; }
+
+/* line 45, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress .progress-bar.progress-bar-warning {
+  background-color: #F0F3F3; }
+
+/* line 49, /Users/mark/appsson-theme/backend/assets/sass/_progress.scss */
+.progress .progress-bar.progress-bar-danger {
+  background-color: #e25d5d; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+
+/* line 7, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel > .panel-heading {
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 14px 10px; }
+
+/* line 13, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-heading > .panel-title {
+  height: auto;
+  font-size: 0.813em; }
+
+/* line 19, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel > .panel-footer {
+  border-color: #ecedf0; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel .actions {
+  position: absolute;
+  right: 30px;
+  top: 8px; }
+
+/* line 29, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel .actions i {
+  font-size: 0.875em;
+  margin: 0 3px; }
+
+/* line 34, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel .actions i:hover {
+  cursor: pointer; }
+
+/* line 38, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel > .panel-footer {
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px; }
+
+/* line 43, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.modal-footer .btn + .btn {
+  margin-bottom: 5px; }
+
+/* line 46, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel .panel-body .h1 {
+  float: none; }
+
+/* line 50, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-default > .panel-heading {
+  border-color: #eff2f7;
+  background: #fff;
+  color: #767676; }
+
+/* line 56, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-default .actions i {
+  color: #197131;
+  margin: 0 3px; }
+
+/* line 61, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-default .actions i:hover {
+  cursor: pointer;
+  color: #767676; }
+
+/* line 66, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-default > .panel-footer {
+  border-color: #eff2f7;
+  background: #fff;
+  color: #767676; }
+
+/* line 72, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-primary > .panel-heading {
+  color: #fff;
+  background-color: #c5c5c5;
+  border-color: #c5c5c5; }
+
+/* line 78, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-primary {
+  border-color: #1abc9c; }
+
+/* line 82, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-primary > .panel-heading a, .panel-primary > .panel-heading a:hover {
+  color: #fff; }
+
+/* line 86, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-solid-default > .panel-body, .panel-solid-default > .panel-footer, .panel-solid-default > .panel-heading {
+  background: #197131;
+  border: none;
+  color: #fff; }
+
+/* line 92, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-solid-primary > .panel-body, .panel-solid-primary > .panel-footer, .panel-solid-primary > .panel-heading {
+  background: #c5c5c5;
+  color: #fff;
+  border: none; }
+
+/* line 98, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-solid-success > .panel-body, .panel-solid-success > .panel-footer, .panel-solid-success > .panel-heading {
+  background: #0090DA;
+  color: #fff;
+  border: none; }
+
+/* line 104, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-solid-warning > .panel-body, .panel-solid-warning > .panel-footer, .panel-solid-warning > .panel-heading {
+  background: #F0F3F3;
+  color: #fff;
+  border: none; }
+
+/* line 110, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-solid-info > .panel-body, .panel-solid-info > .panel-footer, .panel-solid-info > .panel-heading {
+  background: #1F7BB6;
+  color: #fff;
+  border: none; }
+
+/* line 116, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-solid-danger > .panel-body, .panel-solid-danger > .panel-footer, .panel-solid-danger > .panel-heading {
+  background: #e25d5d;
+  color: #fff;
+  border: none; }
+
+/* line 122, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-default > .panel-body {
+  background: #197131;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #197131 25%, #a4aaad 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(25%, #197131), color-stop(100%, #a4aaad));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #197131 25%, #a4aaad 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #197131 25%, #a4aaad 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #197131 25%, #a4aaad 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #197131 25%, #a4aaad 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$defaultColor', endColorstr='#a4aaad',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 136, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-primary > .panel-body {
+  background: #1abc9c;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #1abc9c 25%, #87d5ab 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(25%, #1abc9c), color-stop(100%, #87d5ab));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #1abc9c 25%, #87d5ab 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #1abc9c 25%, #87d5ab 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #1abc9c 25%, #87d5ab 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #1abc9c 25%, #87d5ab 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1abc9c', endColorstr='#87d5ab',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 150, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-success > .panel-body {
+  background: #2dcc70;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2dcc70 25%, #27ad5f 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(25%, #2dcc70), color-stop(100%, #27ad5f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #2dcc70 25%, #27ad5f 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #2dcc70 25%, #27ad5f 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #2dcc70 25%, #27ad5f 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #2dcc70 25%, #27ad5f 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dcc70', endColorstr='#27ad5f',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 164, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-warning > .panel-body {
+  background: #f1c40f;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f1c40f 25%, #e0af0f 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(25%, #f1c40f), color-stop(100%, #e0af0f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #f1c40f 25%, #e0af0f 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #f1c40f 25%, #e0af0f 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #f1c40f 25%, #e0af0f 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #f1c40f 25%, #e0af0f 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1c40f', endColorstr='#e0af0f',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 178, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-info > .panel-body {
+  background: #3598db;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #3598db 25%, #0e7bce 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(25%, #3598db), color-stop(100%, #0e7bce));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #3598db 25%, #0e7bce 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #3598db 25%, #0e7bce 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #3598db 25%, #0e7bce 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #3598db 25%, #0e7bce 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3598db', endColorstr='#0e7bce',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 193, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-info > .panel-body a:link,
+.panel-gradient-info > .panel-body a:visited {
+  color: #fff;
+  text-decoration: none; }
+
+/* line 199, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-info > .panel-body a:hover,
+.panel-gradient-info > .panel-body a:active {
+  color: #fff;
+  text-decoration: underline; }
+
+/* line 204, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-gradient-danger > .panel-body {
+  background: #e84c3d;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #e84c3d 25%, #d34639 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(25%, #e84c3d), color-stop(100%, #d34639));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #e84c3d 25%, #d34639 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #e84c3d 25%, #d34639 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #e84c3d 25%, #d34639 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, #e84c3d 25%, #d34639 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e84c3d', endColorstr='#d34639',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 220, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.widget-mini {
+  position: relative; }
+  /* line 222, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+  .widget-mini .title {
+    font-size: 1em;
+    display: block; }
+  /* line 226, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+  .widget-mini .total {
+    font-size: 2em;
+    display: block;
+    font-weight: 300; }
+  /* line 231, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+  .widget-mini i {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+
+/* line 238, /Users/mark/appsson-theme/backend/assets/sass/_panels.scss */
+.panel-info > .panel-heading {
+  color: #717171;
+  background-color: #b7e1cd;
+  border-color: #bce8f1; }
+
+/* line 3, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+.chat-widget .wrapper {
+  margin: 10px 0;
+  clear: both; }
+  /* line 6, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+  .chat-widget .wrapper .avatar {
+    width: 50px;
+    height: 50px; }
+  /* line 10, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+  .chat-widget .wrapper .avatar i {
+    border: solid 2px #fff; }
+  /* line 13, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+  .chat-widget .wrapper .post {
+    padding: 7px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    position: relative; }
+  /* line 18, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+  .chat-widget .wrapper .post.default {
+    background-color: #E6E6E6; }
+  /* line 21, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+  .chat-widget .wrapper .post.primary {
+    background-color: #c5c5c5;
+    color: #fff; }
+  /* line 25, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+  .chat-widget .wrapper .post.default .arrow {
+    border-right-color: rgba(0, 0, 0, 0.1); }
+  /* line 28, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+  .chat-widget .wrapper .post.primary .arrow {
+    border-left-color: #c5c5c5; }
+
+/* line 35, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+.widget-weather .title {
+  margin-bottom: 10px; }
+
+/* line 38, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+.widget-weather .temp {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 12px; }
+
+/* line 44, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+body.fullscreen-widget-active {
+  overflow: hidden;
+  position: fixed; }
+
+/* line 48, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+body.fullscreen-widget-active .animated {
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  animation-name: none; }
+
+/* line 54, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+body.fullscreen-widget-active .panel .panel-heading .actions > .fa-chevron-down,
+body.fullscreen-widget-active .panel .panel-heading .actions > .fa-times {
+  display: none; }
+
+/* line 57, /Users/mark/appsson-theme/backend/assets/sass/_widgets.scss */
+.panel.widget-fullscreen {
+  display: block;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper {
+  margin-bottom: 20px; }
+
+/* line 4, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper .nav-tabs > li > a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+
+/* line 7, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper .tab-content {
+  border: 1px solid #ddd;
+  border-top: 0;
+  padding: 10px 15px; }
+
+/* line 12, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper > .nav-tabs > li a {
+  color: #5D5F63; }
+
+/* line 15, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper > .nav-tabs > li.active > a {
+  border-top: 2px solid #c5c5c5;
+  background-color: #ffffff; }
+
+/* line 19, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-left > .nav-tabs > li, .tab-wrapper.tab-right > .nav-tabs > li {
+  float: none;
+  min-width: 75px; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-left > .nav-tabs > li > a, .tab-wrapper.tab-right > .nav-tabs > li > a {
+  border: 1px solid #ddd; }
+
+/* line 26, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-left > .nav-tabs > li.active > a, .tab-wrapper.tab-right > .nav-tabs > li.active > a {
+  border-top-color: #ddd !important; }
+
+/* line 29, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-left .tab-content, .tab-wrapper.tab-right .tab-content {
+  overflow: auto;
+  border-top: 1px solid #ddd; }
+
+/* line 33, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-left > .nav-tabs {
+  float: left;
+  margin-right: -3px; }
+
+/* line 37, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-left > .nav-tabs > li > a {
+  border-right: 0; }
+
+/* line 40, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-left > .nav-tabs > li.active > a {
+  border-left: 2px solid #c5c5c5; }
+
+/* line 43, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-right > .nav-tabs {
+  float: right;
+  margin-left: -1px; }
+
+/* line 47, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-right > .nav-tabs > li > a {
+  border-left: 0; }
+
+/* line 50, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-right > .nav-tabs > li.active > a {
+  border-right: 2px solid #c5c5c5; }
+
+/* line 53, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-bottom > .tab-content {
+  border-top: 1px solid #ddd; }
+
+/* line 56, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-bottom > .nav-tabs {
+  border-bottom: none;
+  margin-top: 0px; }
+
+/* line 60, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-wrapper.tab-bottom > .nav-tabs > li.active > a {
+  margin-top: -2px;
+  border-top-color: transparent !important;
+  border-bottom: 2px solid #c5c5c5; }
+
+/* line 65, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-primary.tab-wrapper > .nav-tabs > li.active > a {
+  border-top-color: #c5c5c5; }
+
+/* line 68, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-primary.tab-wrapper.tab-left > .nav-tabs > li.active {
+  border-left-color: #c5c5c5; }
+
+/* line 71, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-primary.tab-wrapper.tab-right > .nav-tabs > li.active {
+  border-right-color: #c5c5c5; }
+
+/* line 74, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.tab-primary.tab-wrapper.tab-bottom > .nav-tabs > li.active > a {
+  border-bottom-color: #c5c5c5; }
+
+/* line 80, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+.ng-isolate-scope.active {
+  border-top: 2px solid #c5c5c5; }
+  /* line 82, /Users/mark/appsson-theme/backend/assets/sass/_tabs.scss */
+  .ng-isolate-scope.active .ng-binding {
+    margin-right: 0; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_badge.scss */
+.badge {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-weight: normal;
+  font-size: 0.688em;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 2px 7px 4px 7px; }
+
+/* line 12, /Users/mark/appsson-theme/backend/assets/sass/_badge.scss */
+.badge-primary {
+  background-color: #c5c5c5; }
+
+/* line 16, /Users/mark/appsson-theme/backend/assets/sass/_badge.scss */
+.badge-warning {
+  background-color: #F0F3F3; }
+
+/* line 20, /Users/mark/appsson-theme/backend/assets/sass/_badge.scss */
+.badge-success {
+  background-color: #0090DA; }
+
+/* line 24, /Users/mark/appsson-theme/backend/assets/sass/_badge.scss */
+.badge-danger {
+  background-color: #e25d5d; }
+
+/* line 28, /Users/mark/appsson-theme/backend/assets/sass/_badge.scss */
+.badge-info {
+  background-color: #1F7BB6; }
+
+/* line 33, /Users/mark/appsson-theme/backend/assets/sass/_badge.scss */
+.label.label-circle {
+  border-radius: 50%;
+  background-clip: padding-box;
+  padding: 4px;
+  width: 20px;
+  height: 20px; }
+
+/* line 2, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.default-color {
+  color: #197131; }
+
+/* line 6, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.primary-color {
+  color: #c5c5c5; }
+
+/* line 10, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.success-color {
+  color: #0090DA; }
+
+/* line 14, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.info-color {
+  color: #1F7BB6; }
+
+/* line 18, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.warning-color {
+  color: #F0F3F3; }
+
+/* line 22, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.danger-color {
+  color: #e25d5d; }
+
+/* line 26, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.default-bg-color {
+  background-color: #197131; }
+
+/* line 30, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.primary-bg-color {
+  background-color: #c5c5c5; }
+
+/* line 34, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.success-bg-color {
+  background-color: #0090DA; }
+
+/* line 38, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.info-bg-color {
+  background-color: #1F7BB6; }
+
+/* line 42, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.warning-bg-color {
+  background-color: #F0F3F3; }
+
+/* line 46, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.danger-bg-color {
+  background-color: #e25d5d; }
+
+/* line 50, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.text-muted {
+  color: #a2a2a2 !important; }
+
+/* line 53, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.padding-none {
+  padding: 0 !important; }
+
+/* line 56, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.margin-none {
+  margin: 0; }
+
+/* line 59, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.block {
+  display: block; }
+
+/* line 62, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.no-gutter {
+  margin-right: 0;
+  margin-left: 0; }
+
+/* line 66, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.arrow.right {
+  top: 50%;
+  right: -9px;
+  margin-top: -9px;
+  border-left-color: rgba(0, 0, 0, 0.1);
+  border-right-width: 0; }
+
+/* line 73, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.arrow.left {
+  top: 50%;
+  left: -9px;
+  margin-top: -9px;
+  border-right-color: rgba(0, 0, 0, 0.1);
+  border-left-width: 0; }
+
+/* line 81, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.arrow,
+.arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+/* line 89, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.arrow {
+  z-index: 10;
+  border-width: 9px; }
+
+/* line 97, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.google-map {
+  height: 350px; }
+
+/* line 100, /Users/mark/appsson-theme/backend/assets/sass/_misc.scss */
+.jvectormap-zoomin, .jvectormap-zoomout {
+  width: 15px;
+  height: 17px; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider.slider-horizontal {
+  margin: 10px 0; }
+
+/* line 4, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider.slider-vertical {
+  margin: 0 10px; }
+
+/* line 7, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider-handle.round {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #EFF2F7;
+  background: #fff;
+  cursor: pointer; }
+
+/* line 15, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider-default .slider-selection {
+  background-image: none;
+  background-color: #197131; }
+
+/* line 19, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider-primary .slider-selection {
+  background-image: none;
+  background-color: #c5c5c5; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider-success .slider-selection {
+  background-image: none;
+  background-color: #0090DA; }
+
+/* line 27, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider-warning .slider-selection {
+  background-image: none;
+  background-color: #F0F3F3; }
+
+/* line 31, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider-info .slider-selection {
+  background-image: none;
+  background-color: #1F7BB6; }
+
+/* line 35, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+.slider-danger .slider-selection {
+  background-image: none;
+  background-color: #e25d5d; }
+
+/* line 39, /Users/mark/appsson-theme/backend/assets/sass/_sliders.scss */
+#RGB {
+  height: 239px;
+  background: #808080;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 3, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.widget-gauge {
+  text-align: center; }
+
+/* line 7, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.goal-wrapper {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 8px; }
+  /* line 11, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+  .goal-wrapper .gauge-value {
+    color: #0090DA; }
+  /* line 14, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+  .goal-wrapper .goal-value {
+    color: #999; }
+
+/* line 19, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.tc-chart-js-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  /* line 23, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+  .tc-chart-js-legend li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 0.75em; }
+  /* line 28, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+  .tc-chart-js-legend li span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    margin: 0 5px; }
+
+/* line 37, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.server-chart ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 41, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.server-chart ul li {
+  list-style: none; }
+
+/* line 46, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.browser-chart {
+  height: 215px; }
+  /* line 48, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+  .browser-chart ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  /* line 53, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+  .browser-chart ul li {
+    font-size: 0.75em; }
+  /* line 56, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+  .browser-chart ul li i {
+    font-size: 0.625em;
+    vertical-align: middle;
+    margin: 0 5px 0 0; }
+
+/* line 63, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.chart-tooltip {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #233242 !important;
+  border: 0px !important;
+  padding: 10px 20px !important;
+  font-size: 0.813em;
+  color: #fff; }
+
+/* line 72, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.stats {
+  margin-bottom: 0; }
+
+/* line 76, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.stats .panel-body {
+  height: 321px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -ms-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px; }
+
+/* line 81, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.stats .panel-body h5 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.125em; }
+
+/* line 86, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.stats .panel-body ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* line 91, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.stats .panel-body li {
+  padding: 10px 0; }
+
+/* line 96, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.stats .panel-body .badge {
+  background-color: #fff;
+  color: #46C6A2; }
+
+/* line 105, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+#server-chart {
+  height: 270px; }
+
+/* line 109, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.reportdate {
+  cursor: pointer; }
+
+/* line 114, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+#doughnut-canvas-holder {
+  max-width: 137px;
+  min-width: 80px; }
+
+/* line 119, /Users/mark/appsson-theme/backend/assets/sass/_charts.scss */
+.jqstooltip {
+  font-size: 1em;
+  padding: 25px;
+  min-width: 35px !important;
+  min-height: 35px !important; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  list-style: none;
+  line-height: 20px; }
+
+/* line 10, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* line 17, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-list .dd-list {
+  padding-left: 30px; }
+
+/* line 20, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-collapsed .dd-list {
+  display: none; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-item, .dd-empty, .dd-placeholder {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  line-height: 20px; }
+
+/* line 31, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-handle {
+  cursor: move;
+  display: block;
+  height: 30px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+/* line 46, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-handle:hover {
+  background: #fff;
+  color: #c5c5c5; }
+
+/* line 50, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-item > button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 20px;
+  margin: 5px 0;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold; }
+
+/* line 68, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-item > button:before {
+  content: '+';
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-indent: 0; }
+
+/* line 76, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-item > button[data-action="collapse"]:before {
+  content: '-'; }
+
+/* line 79, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-placeholder, .dd-empty {
+  margin: 5px 0;
+  padding: 0;
+  min-height: 30px;
+  background: #f2fbff;
+  border: 1px dashed #b6bcbf;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+/* line 88, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-empty {
+  border: 1px dashed #bbb;
+  min-height: 100px;
+  background-color: #e5e5e5;
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px; }
+
+/* line 95, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-dragel {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999; }
+
+/* line 100, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-dragel > .dd-item .dd-handle {
+  margin-top: 0; }
+
+/* line 103, /Users/mark/appsson-theme/backend/assets/sass/_nested-sortable.scss */
+.dd-dragel .dd-handle {
+  -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.1); }
+
+/* line 2, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.list-icon div {
+  line-height: 40px;
+  white-space: nowrap; }
+
+/* line 6, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.list-icon i {
+  display: inline-block;
+  width: 40px;
+  margin: 0;
+  font-size: 0.875em;
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 18, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social {
+  margin: 0;
+  padding: 0; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social ul {
+  margin: 0;
+  padding: 5px; }
+
+/* line 28, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social ul li {
+  margin: 5px;
+  list-style: none outside none;
+  display: inline-block; }
+
+/* line 34, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social i {
+  width: 40px;
+  height: 40px;
+  color: #FFF;
+  background-color: #909AA0;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 12px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s; }
+
+/* line 53, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social i:hover {
+  color: #FFF;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s; }
+
+/* line 63, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-facebook:hover {
+  background: #4060A5; }
+
+/* line 67, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-twitter:hover {
+  background: #00ABE3; }
+
+/* line 71, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-google-plus:hover {
+  background: #e64522; }
+
+/* line 75, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-github:hover {
+  background: #343434; }
+
+/* line 79, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-pinterest:hover {
+  background: #cb2027; }
+
+/* line 83, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-linkedin:hover {
+  background: #0094BC; }
+
+/* line 87, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-flickr:hover {
+  background: #FF57AE; }
+
+/* line 91, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-instagram:hover {
+  background: #375989; }
+
+/* line 95, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-vimeo-square:hover {
+  background: #83DAEB; }
+
+/* line 99, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-stack-overflow:hover {
+  background: #FEA501; }
+
+/* line 103, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-dropbox:hover {
+  background: #017FE5; }
+
+/* line 107, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-tumblr:hover {
+  background: #3a5876; }
+
+/* line 111, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-dribbble:hover {
+  background: #F46899; }
+
+/* line 115, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-skype:hover {
+  background: #00C6FF; }
+
+/* line 119, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-stack-exchange:hover {
+  background: #4D86C9; }
+
+/* line 123, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-youtube:hover {
+  background: #FF1F25; }
+
+/* line 127, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-xing:hover {
+  background: #005C5E; }
+
+/* line 131, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-rss:hover {
+  background: #e88845; }
+
+/* line 135, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-foursquare:hover {
+  background: #09B9E0; }
+
+/* line 139, /Users/mark/appsson-theme/backend/assets/sass/_icons.scss */
+.social .fa-youtube-play:hover {
+  background: #DF192A; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.form-control {
+  border: 2px solid #e8ebed;
+  border-radius: 2px;
+  box-shadow: none;
+  background: #f1f1f1;
+  height: 37px;
+  padding: 8px 12px 9px 12px;
+  border-radius: 0px; }
+
+/* line 10, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.form-control:focus {
+  background: #fff;
+  border-color: #c5c5c5;
+  box-shadow: none; }
+
+/* line 15, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+select.input-sm, select.form-group-sm .form-control {
+  height: auto; }
+
+/* line 18, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+label.error {
+  color: #fff;
+  background: #e25d5d;
+  border: solid thin #fff;
+  padding: 3px 5px; }
+
+/* line 24, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+label.valid {
+  color: #fff;
+  background: #0090DA;
+  border: solid thin #fff;
+  padding: 3px 5px; }
+
+/* line 31, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+/* line 40, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.inputfile + label {
+  max-width: 80%;
+  /* 20px */
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.525rem 1rem;
+  border-radius: 20px;
+  /* 10px 20px */ }
+
+/* line 53, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.inputfile + label {
+  cursor: pointer;
+  /* "hand" cursor */ }
+
+/* line 59, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.inputfile + label {
+  color: #e25d5d;
+  background-color: none; }
+
+/* line 67, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.inputfile:focus + label,
+.inputfile.has-focus + label,
+.inputfile + label:hover {
+  color: #e88080; }
+
+/* line 71, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.inputfile + label i {
+  padding-right: 10px; }
+
+/* line 78, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.step-content {
+  border: 1px solid #D4D4D4;
+  border-top: 0;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+/* line 85, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard {
+  position: relative;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065); }
+
+/* line 96, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard:before, .wizard:after {
+  display: table;
+  line-height: 0;
+  content: ""; }
+
+/* line 101, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard:after {
+  clear: both; }
+
+/* line 104, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul {
+  width: 4000px;
+  padding: 0;
+  margin: 0;
+  list-style: none outside none; }
+
+/* line 110, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul.previous-disabled li.complete {
+  cursor: default; }
+
+/* line 113, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul.previous-disabled li.complete:hover {
+  color: #468847;
+  cursor: default;
+  background: #f3f4f5; }
+
+/* line 118, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul.previous-disabled li.complete:hover .chevron:before {
+  border-left-color: #f3f4f5; }
+
+/* line 121, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li {
+  position: relative;
+  float: left;
+  height: 46px;
+  padding: 0 20px 0 30px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 46px;
+  color: #999999;
+  cursor: default;
+  background: #ededed; }
+
+/* line 133, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li .chevron {
+  position: absolute;
+  top: 0;
+  right: -14px;
+  z-index: 1;
+  display: block;
+  border: 24px solid transparent;
+  border-right: 0;
+  border-left: 14px solid #d4d4d4; }
+
+/* line 143, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li .chevron:before {
+  position: absolute;
+  top: -24px;
+  right: 1px;
+  display: block;
+  border: 24px solid transparent;
+  border-right: 0;
+  border-left: 14px solid #ededed;
+  content: ""; }
+
+/* line 153, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li.complete {
+  color: #c5c5c5;
+  background: #f3f4f5; }
+
+/* line 157, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li.complete:hover {
+  cursor: pointer;
+  background: #e1f2ef; }
+
+/* line 161, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li.complete:hover .chevron:before {
+  border-left: 14px solid #e1f2ef; }
+
+/* line 164, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li.complete .chevron:before {
+  border-left: 14px solid #f3f4f5; }
+
+/* line 167, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li.active {
+  color: #c5c5c5;
+  background: #fff; }
+
+/* line 171, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li.active .chevron:before {
+  border-left: 14px solid #fff; }
+
+/* line 174, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li .badge {
+  margin-right: 8px;
+  border-radius: 30px; }
+
+/* line 178, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard ul li:first-child {
+  padding-left: 20px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px; }
+
+/* line 182, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard .actions {
+  position: initial;
+  z-index: 1000;
+  float: right;
+  padding-right: 15px;
+  padding-left: 15px;
+  line-height: 46px;
+  vertical-align: middle;
+  background-color: #e5e5e5;
+  border-left: 1px solid #d4d4d4; }
+
+/* line 193, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard .actions a {
+  margin-right: 8px;
+  font-size: 12px;
+  line-height: 45px; }
+
+/* line 198, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard .actions .btn-prev i {
+  margin-right: 5px;
+  color: #fff; }
+
+/* line 202, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard .actions .btn-next i {
+  margin-left: 5px;
+  color: #fff; }
+
+/* line 206, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard .actions .btn-prev[disabled] i {
+  color: rgba(255, 255, 255, 0.75); }
+
+/* line 209, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.step-content .step-pane {
+  display: none; }
+
+/* line 212, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.step-content .active {
+  display: block; }
+
+/* line 215, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.step-content .active .btn-group .active {
+  display: inline-block; }
+
+/* line 218, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard .steps .badge.badge-info {
+  background-color: #c5c5c5; }
+
+/* line 221, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.wizard .steps .badge.badge-success {
+  background-color: #c5c5c5; }
+
+/* line 224, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.form-group .title {
+  text-align: right; }
+
+/* line 230, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.drop-box {
+  background: #F8F8F8;
+  border: 5px dashed #DDD;
+  height: 205px;
+  text-align: center;
+  padding-top: 25px;
+  margin-left: 20px; }
+
+/* line 239, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.up-buttons {
+  float: left; }
+
+/* line 243, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.drop-box.dragover {
+  border: 5px dashed blue; }
+
+/* line 247, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.drop-box.dragover-err {
+  border: 5px dashed red; }
+
+/* line 252, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.ng-wizard {
+  margin: 10px 0; }
+  /* line 254, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+  .ng-wizard h2 {
+    margin: 15px 0; }
+
+/* line 258, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > li {
+  float: left;
+  font-size: 18px; }
+
+/* line 263, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > li + li {
+  margin-left: 2px; }
+
+/* line 267, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > li > a {
+  border-radius: 5px;
+  cursor: default;
+  color: #197131; }
+
+/* line 275, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > li > a,
+.rc-nav-wizard > li > a:hover,
+.rc-nav-wizard > li > a:focus {
+  background-color: transparent; }
+
+/* line 279, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > li > a > .badge {
+  margin-left: 3px;
+  font-size: 18px;
+  padding: 5px 9px;
+  border-radius: 15px;
+  color: #ffffff;
+  background-color: #197131; }
+
+/* active = current wizard step */
+/* line 291, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > li.active > a,
+.rc-nav-wizard > li.active > a:hover,
+.rc-nav-wizard > li.active > a:focus {
+  color: #c5c5c5;
+  background-color: transparent; }
+
+/* line 296, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > .active > a > .badge {
+  color: #ffffff;
+  background-color: #c5c5c5; }
+
+/* success = completed wizard step */
+/* line 304, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > li.success > a,
+.rc-nav-wizard > li.success > a:hover,
+.rc-nav-wizard > li.success > a:focus {
+  color: #0090DA;
+  background-color: transparent; }
+
+/* line 309, /Users/mark/appsson-theme/backend/assets/sass/_forms.scss */
+.rc-nav-wizard > .success > a > .badge {
+  color: #ffffff;
+  background-color: #0090DA; }
+
+/* ==========================================================================
+   Login
+   ========================================================================== */
+/* line 5, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+#login-wrapper {
+  margin: 100px auto; }
+  /* line 7, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  #login-wrapper .logo {
+    color: #1d212a;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 15px 0 0 15px;
+    display: inline-block; }
+  /* line 14, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  #login-wrapper .logo span {
+    font-weight: 700; }
+  /* line 17, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  #login-wrapper .logo img {
+    margin-top: -5px; }
+  /* line 20, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  #login-wrapper .brand {
+    text-align: center;
+    padding: 20px 0; }
+
+/* line 25, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+#login-wrapper .form-group i {
+  position: absolute;
+  left: 27px;
+  top: 11px; }
+
+/* line 30, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+#login-wrapper #email, #login-wrapper #password {
+  padding-left: 32px; }
+
+/* ==========================================================================
+   Profile
+   ========================================================================== */
+/* line 37, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.profile-pic {
+  margin: 20px 0 0 0; }
+  /* line 39, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  .profile-pic img {
+    border: 7px solid #e5e6ea; }
+
+/* line 43, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.profile-info .connect {
+  margin: 15px 0 5px 0; }
+  /* line 45, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  .profile-info .connect button {
+    margin-right: 15px; }
+
+/* line 50, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.timeline-post-to textarea {
+  min-height: 80px;
+  margin-bottom: 15px; }
+
+/* line 55, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.timeline-post-to:before {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  content: " ";
+  position: absolute;
+  left: 5px;
+  top: 19px;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #fff transparent transparent;
+  display: block; }
+
+/* line 68, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.timeline-post ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 15px 0 30px;
+  border-left: 2px solid #ddd; }
+
+/* line 74, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.timeline-post ul li {
+  padding: 5px 15px;
+  display: block;
+  min-height: 54px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin: 20px 0 20px 40px;
+  background: #efefef;
+  position: relative;
+  border-left: 4px solid transparent; }
+
+/* line 85, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.timeline-post ul li:before {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  content: " ";
+  position: absolute;
+  left: -14px;
+  top: 19px;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #efefef transparent transparent;
+  display: block; }
+
+/* line 97, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.timeline-post ul li img {
+  margin-bottom: 15px; }
+
+/* line 100, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.timeline-post .date {
+  position: absolute;
+  left: -69px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2em; }
+  /* line 110, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  .timeline-post .date span {
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    margin-top: 7px;
+    font-weight: 600; }
+  /* line 117, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+  .timeline-post .date span.small {
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    margin-top: -2px; }
+
+/* line 125, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto; }
+
+/* line 133, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* ==========================================================================
+   Error Pages 404 and 500
+   ========================================================================== */
+/* line 144, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+#error-container {
+  text-align: center;
+  margin: 100px auto 0px; }
+
+/* line 149, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+#error-container header h1 {
+  font-size: 10em; }
+
+/* line 153, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+#error-container header p {
+  text-transform: uppercase;
+  font-size: 2em; }
+
+/* line 157, /Users/mark/appsson-theme/backend/assets/sass/_pages.scss */
+#error-container p {
+  margin: 10px 0 20px 0; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center; }
+
+/* line 8, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .month {
+  display: inline-block;
+  width: 190px;
+  text-align: center;
+  color: #c1c1c1;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 5px 5px;
+  position: relative;
+  top: 2px; }
+
+/* line 20, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button {
+  display: inline-block;
+  text-align: right; }
+
+/* line 24, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button.leftalign {
+  text-align: left !important; }
+
+/* line 27, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  padding: 5px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #C1C1C1; }
+
+/* line 44, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover {
+  background: #f4f4f4;
+  padding: 5px 10px; }
+
+/* line 48, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive {
+  opacity: 0.5; }
+
+/* line 51, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.inactive:hover {
+  background: none;
+  cursor: default; }
+
+/* line 55, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  padding: 5px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #C1C1C1; }
+
+/* line 72, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+  background: #f4f4f4;
+  padding: 5px 10px; }
+
+/* line 76, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive {
+  opacity: 0.5; }
+
+/* line 79, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.inactive:hover {
+  background: none;
+  cursor: default; }
+
+/* line 83, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table {
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 87, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table .header-days {
+  height: 40px;
+  font-size: 10px;
+  background: #fff; }
+
+/* line 92, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table .header-days .header-day {
+  vertical-align: middle;
+  text-align: center;
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  color: #666;
+  font-size: 14px; }
+
+/* line 100, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table .header-days .header-day:last-child {
+  border-right: 0px solid #000000; }
+
+/* line 103, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr {
+  height: auto; }
+
+/* line 106, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr td {
+  vertical-align: top; }
+
+/* line 109, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr .day {
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  width: 100%;
+  height: inherit; }
+
+/* line 115, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr .day.inactive {
+  background: #ddd; }
+
+/* line 118, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr .day:last-child {
+  border-right: 0px solid #000000; }
+
+/* line 121, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr .day .day-contents {
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 12px;
+  text-align: center; }
+
+/* line 127, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr .empty, .cal1 .clndr .clndr-table tr .adjacent-month {
+  border-left: 0px solid #000000;
+  border-top: 0px solid #000000;
+  width: 100%;
+  height: inherit; }
+
+/* line 133, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr .empty:last-child, .cal1 .clndr .clndr-table tr .adjacent-month:last-child {
+  border-right: 0px solid #000000; }
+
+/* line 136, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr:last-child .day {
+  border-bottom: 0px solid #000000; }
+
+/* line 139, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-table tr:last-child .empty {
+  border-bottom: 0px solid #000000; }
+
+/* line 142, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.calendar-block {
+  background: #fff; }
+
+/* line 145, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.event-list-block {
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px; }
+
+/* line 150, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.calendar-block .day-contents {
+  width: 30px;
+  margin: auto; }
+
+/* line 154, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.today .day-contents {
+  width: 30px;
+  background: #1fb0ab;
+  cursor: pointer;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 163, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.calendar-block .day-contents:hover {
+  width: 30px;
+  background: #1fb0ab;
+  cursor: pointer;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 172, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls {
+  display: block !important;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #0090DA;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px;
+  padding: 23px 20px;
+  width: auto !important;
+  color: #fff; }
+
+/* line 185, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .month span {
+  display: block;
+  font-size: 30px;
+  padding: 0px 10px;
+  margin-bottom: 10px; }
+
+/* line 191, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .month {
+  color: #fff; }
+
+/* line 194, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button, .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button {
+  color: #fff; }
+
+/* line 197, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button:hover, .cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button:hover {
+  background: #f4f4f4;
+  padding: 5px 10px;
+  color: #1fb0ab; }
+
+/* line 202, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-previous-button {
+  left: 15px;
+  top: 25px;
+  position: absolute; }
+
+/* line 207, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-next-button {
+  right: 15px;
+  top: 25px;
+  position: absolute; }
+
+/* line 214, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang {
+  display: block;
+  margin: 0 auto; }
+
+/* line 218, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .clndr-ang-controls {
+  background: #0090DA;
+  display: block !important;
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px;
+  padding: 23px 20px;
+  width: auto !important;
+  color: #fff; }
+
+/* line 231, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .clndr-ang-controls .month {
+  display: inline-block;
+  width: 190px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative; }
+
+/* line 240, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .clndr-ang-controls .clndr-ang-previous-button {
+  right: auto;
+  left: 20px;
+  top: 10px;
+  font-size: 1.7em;
+  position: absolute; }
+
+/* line 247, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .clndr-ang-controls .clndr-ang-next-button {
+  left: auto;
+  right: 20px;
+  top: 10px;
+  font-size: 1.7em;
+  position: absolute; }
+
+/* line 254, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .clndr-ang-controls:hover {
+  cursor: pointer; }
+
+/* line 257, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .clndr-ang-grid .days-of-the-week {
+  width: 100%; }
+
+/* line 260, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .clndr-ang-grid .days-of-the-week .header-day {
+  float: left;
+  width: 14.28571%;
+  padding: 12px 0;
+  text-align: center; }
+
+/* line 266, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .days .day, .clndr-ang .days .empty {
+  float: left;
+  width: 14.28571%;
+  padding: 8px;
+  position: relative;
+  text-align: center; }
+
+/* line 273, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .days .day.today, .clndr-ang .days .empty.today {
+  background: #0090DA;
+  color: #fff; }
+
+/* line 277, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .days .day .event-indicator, .clndr-ang .days .empty .event-indicator {
+  background-color: #1F7BB6;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 9px;
+  height: 15px;
+  line-height: 16px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 15px; }
+
+/* line 290, /Users/mark/appsson-theme/backend/assets/sass/_calendar.scss */
+.clndr-ang .days .day.adjacent-month, .clndr-ang .days .empty.adjacent-month {
+  opacity: 0.3; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_preloader.scss */
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 200000;
+  opacity: .6; }
+  /* line 8, /Users/mark/appsson-theme/backend/assets/sass/_preloader.scss */
+  .preloader .iconWrapper {
+    background: none;
+    margin: 20% auto;
+    height: 150px;
+    width: 150px; }
+  /* line 14, /Users/mark/appsson-theme/backend/assets/sass/_preloader.scss */
+  .preloader .iconWrapper i {
+    font-size: 3em;
+    color: #000; }
+
+/* line 20, /Users/mark/appsson-theme/backend/assets/sass/_preloader.scss */
+.preloader-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 200000;
+  opacity: .6;
+  top: 0; }
+  /* line 28, /Users/mark/appsson-theme/backend/assets/sass/_preloader.scss */
+  .preloader-inner .iconWrapper {
+    background: none; }
+  /* line 31, /Users/mark/appsson-theme/backend/assets/sass/_preloader.scss */
+  .preloader-inner .iconWrapper i {
+    font-size: 3em;
+    color: #000; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_modals.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000; }
+
+/* line 9, /Users/mark/appsson-theme/backend/assets/sass/_modals.scss */
+.modal-content {
+  box-shadow: none;
+  border-radius: 0;
+  border: solid 10px rgba(255, 255, 255, 0.6); }
+
+@media (min-width: 768px) {
+  /* line 16, /Users/mark/appsson-theme/backend/assets/sass/_modals.scss */
+  .modal-dialog {
+    width: 600px;
+    margin: 160px auto; } }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.mail-option ul li {
+  list-style: none; }
+
+/* line 4, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper header {
+  color: #a2a2a2; }
+
+/* line 7, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper header h2 {
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 15px 0; }
+
+/* line 11, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper header p {
+  position: absolute;
+  right: 35px;
+  top: 20px; }
+
+/* line 16, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-header {
+  padding-top: 5px; }
+
+/* line 19, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-header img {
+  margin-right: 10px; }
+
+/* line 22, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-reply {
+  margin-top: 12px; }
+
+/* line 25, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-body {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  margin-top: 15px; }
+
+/* line 30, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-body p {
+  line-height: 1.8em; }
+
+/* line 33, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-body .panel-footer, #view-mail-wrapper .view-compose-body .panel-footer {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  padding: 15px 0; }
+
+/* line 39, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-body .panel-footer h5 {
+  display: inline-block; }
+
+/* line 42, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-body .panel-footer .attchments {
+  padding: 0 8px;
+  text-transform: lowercase; }
+
+/* line 46, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#view-mail-wrapper .view-mail-body .panel-footer button.pull-right {
+  margin: 0 0 0px 8px; }
+
+/* line 49, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.send-options {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  right: 45px;
+  top: 22px; }
+
+/* line 57, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.send-options a {
+  color: #979797; }
+
+/* line 60, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+#form-group-cc, #form-group-bcc {
+  display: none; }
+
+/* line 63, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.compose-nav > li + li {
+  margin-left: 0;
+  margin-top: 0px; }
+
+/* line 67, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.compose-nav li a, .compose-nav li a:visited {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-top: 1px solid #f2f3f6;
+  padding: 15px;
+  border-right: 3px solid transparent;
+  color: #5D5F63; }
+
+/* line 74, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.compose-nav > li.active > a, .compose-nav > li.active > a:hover, .compose-nav > li.active > a:focus {
+  background: #f9f9f9;
+  color: #c5c5c5;
+  border-left: 3px solid #c5c5c5;
+  margin-left: -3px; }
+
+/* line 80, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.compose-nav > li > a:hover, .compose-nav > li > a:focus {
+  background: #f9f9f9;
+  color: #c5c5c5;
+  border-left: 3px solid #c5c5c5;
+  margin-left: -3px; }
+
+/* line 86, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.mail-checkbox {
+  margin: 0 15px 0 8px; }
+
+/* line 89, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.mail-option .btn-group .fa-refresh, .pag-left, .pag-right {
+  color: #fff; }
+
+/* line 92, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.inbox-pag li {
+  float: left;
+  margin-left: 5px; }
+
+/* line 96, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.inbox-pag li span {
+  display: inline-block;
+  margin-top: 7px;
+  margin-right: 5px; }
+
+/* line 101, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.compose-nav {
+  margin: 15px -15px 0 -15px; }
+
+/* line 104, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.table-inbox span.title {
+  display: block;
+  font-weight: bold; }
+
+/* line 108, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.table-inbox tr {
+  background: #f9f9f9; }
+
+/* line 111, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.table-inbox tr.unread {
+  background: #fff; }
+
+/* line 114, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.table-inbox a, .table-inbox a:visited {
+  color: #5D5F63; }
+
+/* line 117, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.table-inbox .unread a, .table-inbox .unread a:visited {
+  color: #c5c5c5; }
+
+/* line 120, /Users/mark/appsson-theme/backend/assets/sass/_mail.scss */
+.table-inbox .fa-star {
+  color: #F0F3F3; }
+
+/* line 3, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default #header {
+  background: #fff; }
+  /* line 4, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-default #header .logo, .theme-default #header button.sidebar-toggle, .theme-default #header button#toggle-profile, .theme-default #header button#toggle-fullscreen, .theme-default #header .nav li.profile > a {
+    color: #1d112a; }
+  /* line 9, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-default #header button.sidebar-toggle:hover, .theme-default #header button.sidebar-toggle:active, .theme-default #header button#toggle-profile:hover, .theme-default #header button#toggle-profile:active,
+  .theme-default #header button#toggle-fullscreen:hover, .theme-default #header button#toggle-fullscreen:active {
+    background: #f6f8f8; }
+  /* line 12, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-default #header .nav li.profile > a:hover, .theme-default #header .nav li.profile > a:active, .theme-default #header .nav li.profile > a:focus {
+    background: #f6f8f8; }
+
+/* line 16, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default .sidebar-left {
+  background-color: #272927; }
+
+/* line 19, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-default .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-default .sidebar-left .nav > li.active > a, .theme-default .sidebar-left .nav > li.active > a:focus, .theme-default .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default .sidebar-left .nav > li.open > a, .theme-default .sidebar-left .nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+/* line 27, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-default.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #272927; }
+
+/* line 30, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default .sidebar-profile {
+  background: #111111; }
+
+/* line 33, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default.sidebar-mini .sidebar-left .nav > li.active > a, .theme-default.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-default.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-default .sidebar-left .nav > li.active > a, .theme-default .sidebar-left .nav > li.active > a:focus, .theme-default .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 37, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-default.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-default.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #333333;
+  background-color: #fff; }
+
+/* line 44, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark #header {
+  background: #fff; }
+  /* line 46, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark #header .brand {
+    background: #1D212A; }
+    /* line 48, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-dark #header .brand .logo {
+      color: #fff; }
+  /* line 52, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark #header button.sidebar-toggle, .theme-dark #header button#toggle-profile, .theme-dark #header button#toggle-fullscreen, .theme-dark #header .nav li.profile > a {
+    color: #1d212a; }
+  /* line 57, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark #header button.sidebar-toggle:hover, .theme-dark #header button.sidebar-toggle:active, .theme-dark #header button#toggle-profile:hover, .theme-dark #header button#toggle-profile:active,
+  .theme-dark #header button#toggle-fullscreen:hover, .theme-dark #header button#toggle-fullscreen:active {
+    background: #f6f8f8; }
+  /* line 60, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark #header .nav li.profile > a:hover, .theme-dark #header .nav li.profile > a:active, .theme-dark #header .nav li.profile > a:focus {
+    background: #f6f8f8; }
+
+/* line 64, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 67, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-dark .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-dark .sidebar-left .nav > li.active > a, .theme-dark .sidebar-left .nav > li.active > a:focus, .theme-dark .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 71, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark .sidebar-left .nav > li.open > a, .theme-dark .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 75, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-dark.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 78, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark .sidebar-profile {
+  background: #13161c; }
+
+/* line 81, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark.sidebar-mini .sidebar-left .nav > li.active > a, .theme-dark.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-dark.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-dark .sidebar-left .nav > li.active > a, .theme-dark .sidebar-left .nav > li.active > a:focus, .theme-dark .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 85, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-dark.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 92, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full #header {
+  background: #1D212A; }
+  /* line 93, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-full #header .brand {
+    background: #1D212A; }
+    /* line 95, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-dark-full #header .brand .logo {
+      color: #fff; }
+  /* line 99, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-full #header button.sidebar-toggle, .theme-dark-full #header button#toggle-profile, .theme-dark-full #header button#toggle-fullscreen, .theme-dark-full #header .nav li.profile > a {
+    color: #fff; }
+  /* line 104, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-full #header button.sidebar-toggle:hover, .theme-dark-full #header button.sidebar-toggle:active, .theme-dark-full #header button#toggle-profile:hover, .theme-dark-full #header button#toggle-profile:active,
+  .theme-dark-full #header button#toggle-fullscreen:hover, .theme-dark-full #header button#toggle-fullscreen:active {
+    background: #272d39; }
+  /* line 107, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-full #header .nav li.profile > a:hover, .theme-dark-full #header .nav li.profile > a:active, .theme-dark-full #header .nav li.profile > a:focus {
+    background: #272d39; }
+
+/* line 111, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 114, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-dark-full .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-dark-full .sidebar-left .nav > li.active > a, .theme-dark-full .sidebar-left .nav > li.active > a:focus, .theme-dark-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 118, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full .sidebar-left .nav > li.open > a, .theme-dark-full .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 122, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-dark-full.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 125, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full .sidebar-profile {
+  background: #13161c; }
+
+/* line 128, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full.sidebar-mini .sidebar-left .nav > li.active > a, .theme-dark-full.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-dark-full.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-dark-full .sidebar-left .nav > li.active > a, .theme-dark-full .sidebar-left .nav > li.active > a:focus, .theme-dark-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 132, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-dark-full.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 142, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue #header {
+  background: #fff; }
+  /* line 143, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue #header .brand {
+    background: #1F7BB6; }
+    /* line 145, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-blue #header .brand .logo {
+      color: #fff; }
+  /* line 149, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue #header button.sidebar-toggle, .theme-blue #header button#toggle-profile, .theme-blue #header button#toggle-fullscreen, .theme-blue #header .nav li.profile > a {
+    color: #1d212a; }
+  /* line 154, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue #header button.sidebar-toggle:hover, .theme-blue #header button.sidebar-toggle:active, .theme-blue #header button#toggle-profile:hover, .theme-blue #header button#toggle-profile:active,
+  .theme-blue #header button#toggle-fullscreen:hover, .theme-blue #header button#toggle-fullscreen:active {
+    background: #f6f8f8; }
+  /* line 157, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue #header .nav li.profile > a:hover, .theme-blue #header .nav li.profile > a:active, .theme-blue #header .nav li.profile > a:focus {
+    background: #f6f8f8; }
+
+/* line 161, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 164, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-blue .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-blue .sidebar-left .nav > li.active > a, .theme-blue .sidebar-left .nav > li.active > a:focus, .theme-blue .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #1F7BB6; }
+
+/* line 168, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue .sidebar-left .nav > li.open > a, .theme-blue .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 172, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-blue.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 175, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue .sidebar-profile {
+  background: #13161c; }
+
+/* line 178, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue.sidebar-mini .sidebar-left .nav > li.active > a, .theme-blue.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-blue.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-blue .sidebar-left .nav > li.active > a, .theme-blue .sidebar-left .nav > li.active > a:focus, .theme-blue .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #1F7BB6; }
+
+/* line 182, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-blue.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 190, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full #header {
+  background: #1F7BB6; }
+  /* line 191, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue-full #header .brand {
+    background: #1F7BB6; }
+    /* line 193, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-blue-full #header .brand .logo {
+      color: #fff; }
+  /* line 197, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue-full #header button.sidebar-toggle, .theme-blue-full #header button#toggle-profile, .theme-blue-full #header button#toggle-fullscreen, .theme-blue-full #header .nav li.profile > a {
+    color: #fff; }
+  /* line 202, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue-full #header button.sidebar-toggle:hover, .theme-blue-full #header button.sidebar-toggle:active, .theme-blue-full #header button#toggle-profile:hover, .theme-blue-full #header button#toggle-profile:active,
+  .theme-blue-full #header button#toggle-fullscreen:hover, .theme-blue-full #header button#toggle-fullscreen:active {
+    background: #238acc; }
+  /* line 205, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-blue-full #header .nav li.profile > a:hover, .theme-blue-full #header .nav li.profile > a:active, .theme-blue-full #header .nav li.profile > a:focus {
+    background: #238acc; }
+
+/* line 209, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 212, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-blue-full .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-blue-full .sidebar-left .nav > li.active > a, .theme-blue-full .sidebar-left .nav > li.active > a:focus, .theme-blue-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #1F7BB6; }
+
+/* line 216, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full .sidebar-left .nav > li.open > a, .theme-blue-full .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 220, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-blue-full.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 223, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full .sidebar-profile {
+  background: #13161c; }
+
+/* line 226, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full.sidebar-mini .sidebar-left .nav > li.active > a, .theme-blue-full.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-blue-full.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-blue-full .sidebar-left .nav > li.active > a, .theme-blue-full .sidebar-left .nav > li.active > a:focus, .theme-blue-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #1F7BB6; }
+
+/* line 230, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-blue-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-blue-full.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 240, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey #header {
+  background: #fff; }
+  /* line 241, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey #header .brand {
+    background: #197131; }
+    /* line 243, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-grey #header .brand .logo {
+      color: #fff; }
+  /* line 247, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey #header button.sidebar-toggle, .theme-grey #header button#toggle-profile, .theme-grey #header button#toggle-fullscreen, .theme-grey #header .nav li.profile > a {
+    color: #1d212a; }
+  /* line 252, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey #header button.sidebar-toggle:hover, .theme-grey #header button.sidebar-toggle:active, .theme-grey #header button#toggle-profile:hover, .theme-grey #header button#toggle-profile:active,
+  .theme-grey #header button#toggle-fullscreen:hover, .theme-grey #header button#toggle-fullscreen:active {
+    background: #f6f8f8; }
+  /* line 255, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey #header .nav li.profile > a:hover, .theme-grey #header .nav li.profile > a:active, .theme-grey #header .nav li.profile > a:focus {
+    background: #f6f8f8; }
+
+/* line 259, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 262, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-grey .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-grey .sidebar-left .nav > li.active > a, .theme-grey .sidebar-left .nav > li.active > a:focus, .theme-grey .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #197131; }
+
+/* line 266, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey .sidebar-left .nav > li.open > a, .theme-grey .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 270, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-grey.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 273, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey .sidebar-profile {
+  background: #13161c; }
+
+/* line 276, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey.sidebar-mini .sidebar-left .nav > li.active > a, .theme-grey.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-grey.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-grey .sidebar-left .nav > li.active > a, .theme-grey .sidebar-left .nav > li.active > a:focus, .theme-grey .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #197131; }
+
+/* line 280, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-grey.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 288, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full #header {
+  background: #197131; }
+  /* line 289, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey-full #header .brand {
+    background: #197131; }
+    /* line 291, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-grey-full #header .brand .logo {
+      color: #fff; }
+  /* line 295, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey-full #header button.sidebar-toggle, .theme-grey-full #header button#toggle-profile, .theme-grey-full #header button#toggle-fullscreen, .theme-grey-full #header .nav li.profile > a {
+    color: #fff; }
+  /* line 300, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey-full #header button.sidebar-toggle:hover, .theme-grey-full #header button.sidebar-toggle:active, .theme-grey-full #header button#toggle-profile:hover, .theme-grey-full #header button#toggle-profile:active,
+  .theme-grey-full #header button#toggle-fullscreen:hover, .theme-grey-full #header button#toggle-fullscreen:active {
+    background: #1e863a; }
+  /* line 303, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-grey-full #header .nav li.profile > a:hover, .theme-grey-full #header .nav li.profile > a:active, .theme-grey-full #header .nav li.profile > a:focus {
+    background: #1e863a; }
+
+/* line 307, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 310, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-grey-full .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-grey-full .sidebar-left .nav > li.active > a, .theme-grey-full .sidebar-left .nav > li.active > a:focus, .theme-grey-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #197131; }
+
+/* line 314, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full .sidebar-left .nav > li.open > a, .theme-grey-full .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 318, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-grey-full.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 321, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full .sidebar-profile {
+  background: #13161c; }
+
+/* line 324, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full.sidebar-mini .sidebar-left .nav > li.active > a, .theme-grey-full.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-grey-full.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-grey-full .sidebar-left .nav > li.active > a, .theme-grey-full .sidebar-left .nav > li.active > a:focus, .theme-grey-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #197131; }
+
+/* line 328, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-grey-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-grey-full.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 335, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green #header {
+  background: #fff; }
+  /* line 336, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green #header .brand {
+    background: #0090DA; }
+    /* line 338, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-green #header .brand .logo {
+      color: #fff; }
+  /* line 342, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green #header button.sidebar-toggle, .theme-green #header button#toggle-profile, .theme-green #header button#toggle-fullscreen, .theme-green #header .nav li.profile > a {
+    color: #1d212a; }
+  /* line 347, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green #header button.sidebar-toggle:hover, .theme-green #header button.sidebar-toggle:active, .theme-green #header button#toggle-profile:hover, .theme-green #header button#toggle-profile:active,
+  .theme-green #header button#toggle-fullscreen:hover, .theme-green #header button#toggle-fullscreen:active {
+    background: #f6f8f8; }
+  /* line 350, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green #header .nav li.profile > a:hover, .theme-green #header .nav li.profile > a:active, .theme-green #header .nav li.profile > a:focus {
+    background: #f6f8f8; }
+
+/* line 354, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 357, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-green .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-green .sidebar-left .nav > li.active > a, .theme-green .sidebar-left .nav > li.active > a:focus, .theme-green .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 361, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green .sidebar-left .nav > li.open > a, .theme-green .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 365, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-green.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 368, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green .sidebar-profile {
+  background: #13161c; }
+
+/* line 371, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green.sidebar-mini .sidebar-left .nav > li.active > a, .theme-green.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-green.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-green .sidebar-left .nav > li.active > a, .theme-green .sidebar-left .nav > li.active > a:focus, .theme-green .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 375, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-green.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 382, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full #header {
+  background: #0090DA; }
+  /* line 383, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green-full #header .brand {
+    background: #0090DA; }
+    /* line 385, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-green-full #header .brand .logo {
+      color: #fff; }
+  /* line 389, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green-full #header button.sidebar-toggle, .theme-green-full #header button#toggle-profile, .theme-green-full #header button#toggle-fullscreen, .theme-green-full #header .nav li.profile > a {
+    color: #fff; }
+  /* line 394, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green-full #header button.sidebar-toggle:hover, .theme-green-full #header button.sidebar-toggle:active, .theme-green-full #header button#toggle-profile:hover, .theme-green-full #header button#toggle-profile:active,
+  .theme-green-full #header button#toggle-fullscreen:hover, .theme-green-full #header button#toggle-fullscreen:active {
+    background: #00a1f3; }
+  /* line 397, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-green-full #header .nav li.profile > a:hover, .theme-green-full #header .nav li.profile > a:active, .theme-green-full #header .nav li.profile > a:focus {
+    background: #00a1f3; }
+
+/* line 401, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 404, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-green-full .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-green-full .sidebar-left .nav > li.active > a, .theme-green-full .sidebar-left .nav > li.active > a:focus, .theme-green-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 408, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full .sidebar-left .nav > li.open > a, .theme-green-full .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 412, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-green-full.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 415, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full .sidebar-profile {
+  background: #13161c; }
+
+/* line 418, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full.sidebar-mini .sidebar-left .nav > li.active > a, .theme-green-full.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-green-full.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-green-full .sidebar-left .nav > li.active > a, .theme-green-full .sidebar-left .nav > li.active > a:focus, .theme-green-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #0090DA; }
+
+/* line 422, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-green-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-green-full.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 429, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red #header {
+  background: #fff; }
+  /* line 430, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red #header .brand {
+    background: #e25d5d; }
+    /* line 432, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-red #header .brand .logo {
+      color: #fff; }
+  /* line 436, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red #header button.sidebar-toggle, .theme-red #header button#toggle-profile, .theme-red #header button#toggle-fullscreen, .theme-red #header .nav li.profile > a {
+    color: #1d212a; }
+  /* line 441, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red #header button.sidebar-toggle:hover, .theme-red #header button.sidebar-toggle:active, .theme-red #header button#toggle-profile:hover, .theme-red #header button#toggle-profile:active,
+  .theme-red #header button#toggle-fullscreen:hover, .theme-red #header button#toggle-fullscreen:active {
+    background: #f6f8f8; }
+  /* line 444, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red #header .nav li.profile > a:hover, .theme-red #header .nav li.profile > a:active, .theme-red #header .nav li.profile > a:focus {
+    background: #f6f8f8; }
+
+/* line 448, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 451, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-red .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-red .sidebar-left .nav > li.active > a, .theme-red .sidebar-left .nav > li.active > a:focus, .theme-red .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #e25d5d; }
+
+/* line 455, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red .sidebar-left .nav > li.open > a, .theme-red .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 459, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-red.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 462, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red .sidebar-profile {
+  background: #13161c; }
+
+/* line 465, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red.sidebar-mini .sidebar-left .nav > li.active > a, .theme-red.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-red.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-red .sidebar-left .nav > li.active > a, .theme-red .sidebar-left .nav > li.active > a:focus, .theme-red .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #e25d5d; }
+
+/* line 469, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-red.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 477, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full #header {
+  background: #e25d5d; }
+  /* line 478, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red-full #header .brand {
+    background: #e25d5d; }
+    /* line 480, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-red-full #header .brand .logo {
+      color: #fff; }
+  /* line 484, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red-full #header button.sidebar-toggle, .theme-red-full #header button#toggle-profile, .theme-red-full #header button#toggle-fullscreen, .theme-red-full #header .nav li.profile > a {
+    color: #fff; }
+  /* line 489, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red-full #header button.sidebar-toggle:hover, .theme-red-full #header button.sidebar-toggle:active, .theme-red-full #header button#toggle-profile:hover, .theme-red-full #header button#toggle-profile:active,
+  .theme-red-full #header button#toggle-fullscreen:hover, .theme-red-full #header button#toggle-fullscreen:active {
+    background: #e67373; }
+  /* line 492, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-red-full #header .nav li.profile > a:hover, .theme-red-full #header .nav li.profile > a:active, .theme-red-full #header .nav li.profile > a:focus {
+    background: #e67373; }
+
+/* line 496, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 499, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-red-full .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-red-full .sidebar-left .nav > li.active > a, .theme-red-full .sidebar-left .nav > li.active > a:focus, .theme-red-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #e25d5d; }
+
+/* line 503, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full .sidebar-left .nav > li.open > a, .theme-red-full .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 507, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-red-full.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 510, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full .sidebar-profile {
+  background: #13161c; }
+
+/* line 513, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full.sidebar-mini .sidebar-left .nav > li.active > a, .theme-red-full.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-red-full.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-red-full .sidebar-left .nav > li.active > a, .theme-red-full .sidebar-left .nav > li.active > a:focus, .theme-red-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #e25d5d; }
+
+/* line 517, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-red-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-red-full.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 525, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full #header {
+  background: #c5c5c5; }
+  /* line 526, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-blue-full #header .brand {
+    background: #c5c5c5; }
+    /* line 528, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+    .theme-dark-blue-full #header .brand .logo {
+      color: #fff; }
+  /* line 532, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-blue-full #header button.sidebar-toggle, .theme-dark-blue-full #header button#toggle-profile, .theme-dark-blue-full #header button#toggle-fullscreen, .theme-dark-blue-full #header .nav li.profile > a {
+    color: #fff; }
+  /* line 537, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-blue-full #header button.sidebar-toggle:hover, .theme-dark-blue-full #header button.sidebar-toggle:active, .theme-dark-blue-full #header button#toggle-profile:hover, .theme-dark-blue-full #header button#toggle-profile:active,
+  .theme-dark-blue-full #header button#toggle-fullscreen:hover, .theme-dark-blue-full #header button#toggle-fullscreen:active {
+    background: #d2d2d2; }
+  /* line 540, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+  .theme-dark-blue-full #header .nav li.profile > a:hover, .theme-dark-blue-full #header .nav li.profile > a:active, .theme-dark-blue-full #header .nav li.profile > a:focus {
+    background: #d2d2d2; }
+
+/* line 544, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full .sidebar-left {
+  background-color: #1d212a; }
+
+/* line 547, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full .sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-dark-blue-full .sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-dark-blue-full .sidebar-left .nav > li.active > a, .theme-dark-blue-full .sidebar-left .nav > li.active > a:focus, .theme-dark-blue-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #c5c5c5; }
+
+/* line 551, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full .sidebar-left .nav > li.open > a, .theme-dark-blue-full .sidebar-left .nav > li > a:hover {
+  color: #1d2939;
+  background-color: #ffffff; }
+
+/* line 555, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > .nav-sub, .theme-dark-blue-full.sidebar-mini .sidebar-left .nav > li:hover > .nav-sub {
+  background-color: #1d212a; }
+
+/* line 558, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full .sidebar-profile {
+  background: #13161c; }
+
+/* line 561, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full.sidebar-mini .sidebar-left .nav > li.active > a, .theme-dark-blue-full.sidebar-mini .sidebar-left .nav > li.active > a:focus, .theme-dark-blue-full.sidebar-mini .sidebar-left .nav > li.active > a:hover, .theme-dark-blue-full .sidebar-left .nav > li.active > a, .theme-dark-blue-full .sidebar-left .nav > li.active > a:focus, .theme-dark-blue-full .sidebar-left .nav > li.active > a:hover {
+  color: #fff;
+  background-color: #c5c5c5; }
+
+/* line 565, /Users/mark/appsson-theme/backend/assets/sass/_theme-colors.scss */
+.theme-dark-blue-full.sidebar-mini .sidebar-left .nav > li.nav-dropdown-open > a, .theme-dark-blue-full.sidebar-mini .sidebar-left .nav > li:hover > a {
+  color: #1d2939;
+  background-color: #fff; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+div.config {
+  background: #F0F3F3;
+  width: 205px;
+  position: fixed;
+  top: 185px;
+  z-index: 1002;
+  border-radius: 0 0 0 5px;
+  right: -205px; }
+
+/* line 10, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+div.config div.config-swatch-wrap {
+  margin: 10px;
+  position: relative; }
+
+/* line 14, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+div.config h4 {
+  background-color: #1D212A;
+  color: #fff;
+  padding: 2px 0 5px 10px;
+  margin: 0;
+  line-height: 30px;
+  font-size: 13px; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+div.config h4 a {
+  background-color: #1D212A;
+  display: block;
+  height: 37px;
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  font-size: 17px;
+  line-height: 40px;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px 0 0 5px; }
+
+/* line 38, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+div.config h4 a i {
+  margin-right: 5px; }
+
+/* line 41, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+div.config h4 a:hover {
+  text-decoration: none; }
+
+/* line 45, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+.config-swatch-wrap .options {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 49, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+  .config-swatch-wrap .options li.title {
+    font-weight: 700;
+    font-size: 0.813em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    width: 100%; }
+  /* line 56, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+  .config-swatch-wrap .options li {
+    width: 100%;
+    padding: 5px 0; }
+  /* line 60, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+  .config-swatch-wrap .options .theme-style-wrapper {
+    height: 30px;
+    border: 1px solid #E0E0E0; }
+    /* line 63, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper span.header {
+      width: 50%;
+      height: 10px;
+      float: left; }
+    /* line 68, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper span.nav {
+      width: 50%;
+      height: 20px;
+      float: left; }
+    /* line 73, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper .bg-white {
+      background: #fff; }
+    /* line 76, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper .bg-dark {
+      background: #1D212A; }
+    /* line 79, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper .bg-info {
+      background: #1F7BB6; }
+    /* line 82, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper .bg-grey {
+      background: #197131; }
+    /* line 85, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper .bg-red {
+      background: #e25d5d; }
+    /* line 88, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper .bg-green {
+      background: #0090DA; }
+    /* line 91, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+    .config-swatch-wrap .options .theme-style-wrapper .bg-dark-blue {
+      background: #c5c5c5; }
+  /* line 95, /Users/mark/appsson-theme/backend/assets/sass/_demo-settings.scss */
+  .config-swatch-wrap .options .theme-style-wrapper:hover {
+    cursor: pointer; }
+
+/* line 1, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.btn {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 6, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.rounded-img {
+  border-radius: 60px !important; }
+
+/* line 11, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.selected-theme {
+  padding: 0px; }
+
+/* line 15, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.app-buttons {
+  padding: 20px; }
+
+/* line 19, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.app-buttons img {
+  margin-right: 10px; }
+
+/* line 23, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.panel-body h3 {
+  font-weight: 800;
+  border-bottom: 4px solid #F0F3F3;
+  padding: 10px;
+  margin-bottom: 10px; }
+
+/* line 30, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.image-row img {
+  padding: 0px;
+  width: 100%; }
+
+/* line 35, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.img-group:hover .actions-3 {
+  opacity: 1; }
+
+/* line 39, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.actions-3 {
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  z-index: 2;
+  opacity: 0; }
+
+/* line 51, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.actions-3 a {
+  display: block;
+  margin: auto;
+  margin-bottom: 6px;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  font-size: 90%;
+  cursor: pointer; }
+
+/* line 62, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.actions-3 a i {
+  margin-right: 5px; }
+
+/* line 66, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.img-edit {
+  background: #0090DA; }
+
+/* line 70, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.img-delete {
+  background: #e25d5d; }
+
+/* line 74, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.panel-body .dropzone {
+  background: #e25d5d;
+  min-height: 200px; }
+
+/* line 79, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: #cccccc;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  line-height: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  min-width: 100px;
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+
+/* line 99, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-container {
+  display: inline-block;
+  width: 150%;
+  top: 0;
+  border-radius: 4px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 109, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+  color: #fff;
+  background: #428bca; }
+
+/* line 115, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+  color: #000;
+  background: #eeeeee; }
+
+/* line 120, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-handle-on {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px; }
+
+/* line 126, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off {
+  text-align: center;
+  z-index: 1;
+  width: 33.333333333%; }
+
+/* line 132, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-handle-off {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px; }
+
+/* line 139, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block !important;
+  height: 100%;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 20px; }
+
+/* line 152, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch.bootstrap-switch-on .bootstrap-switch-label {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px; }
+
+/* line 157, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-label {
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  z-index: 100;
+  width: 33.333333333%;
+  color: #333333;
+  background: #ffffff; }
+
+/* line 169, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch .bootstrap-switch-handle-on,
+.bootstrap-switch .bootstrap-switch-handle-off,
+.bootstrap-switch .bootstrap-switch-label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block !important;
+  height: 100%;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 20px; }
+
+/* line 183, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.bootstrap-switch input[type='radio'],
+.bootstrap-switch input[type='checkbox'] {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: -1; }
+
+/* line 192, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.social-account {
+  width: 35px;
+  margin: 10px 15px 10px 0px;
+  height: 35px;
+  font-size: 1.5em; }
+
+/* line 199, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.promote button {
+  margin: 20px 0px; }
+
+/* line 203, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.promote h3 {
+  margin-bottom: 20px; }
+
+/* line 207, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.background-images img {
+  padding: 2px; }
+  /* line 209, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .background-images img:hover {
+    opacity: 0.9; }
+  /* line 212, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .background-images img.selected {
+    opacity: 0.5;
+    background-color: green;
+    padding: 4px; }
+
+/* line 219, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.companies-container {
+  padding: 20px; }
+  /* line 221, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .companies-container .dashboard-controls {
+    padding: 30px; }
+  /* line 224, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .companies-container .form-control {
+    background-color: #fff; }
+
+/* line 230, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.dashboard .pageheader {
+  padding: 15px 50px; }
+  /* line 232, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .dashboard .pageheader .description {
+    color: #717171; }
+
+/* line 239, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.dashboard-panel .panel {
+  transition-property: box-shadow;
+  transition-duration: .5s;
+  transition-timing-function: linear; }
+  /* line 243, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .dashboard-panel .panel:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  /* line 246, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .dashboard-panel .panel img {
+    max-width: 117px; }
+
+/* line 250, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.dashboard-panel .dashboard-details {
+  float: left;
+  margin-left: 20px; }
+  /* line 253, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .dashboard-panel .dashboard-details h2 {
+    margin-bottom: 10px;
+    font-weight: 700; }
+  /* line 257, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .dashboard-panel .dashboard-details span {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #0190da; }
+  /* line 262, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .dashboard-panel .dashboard-details p {
+    margin: 0px; }
+
+/* line 268, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.pagination {
+  margin: 0px; }
+  /* line 270, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .pagination a {
+    color: #0190da !important; }
+    /* line 272, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+    .pagination a span {
+      color: #0190da; }
+
+/* line 278, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.edit-controls {
+  height: 100px;
+  width: 20px; }
+  /* line 281, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .edit-controls i {
+    color: #0190da;
+    position: absolute;
+    font-size: 1.25em;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: .4s;
+    transition-timing-function: linear; }
+    /* line 289, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+    .edit-controls i:hover {
+      color: #999999; }
+  /* line 293, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .edit-controls .fa-edit {
+    top: 20px; }
+  /* line 296, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .edit-controls .fa-trash {
+    position: absolute;
+    bottom: 40px; }
+
+/* line 302, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.sidebar .nav-pills {
+  margin-left: 10px;
+  margin-right: 0px; }
+
+/* line 307, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.nav-pills > li > a {
+  border-radius: 0px; }
+
+/* line 311, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.theme-default .sidebar-left {
+  background-color: #1d212a;
+  border-right: 1px solid #e2e2e2; }
+
+/* line 316, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.theme-default .sidebar-profile {
+  background: #13161c; }
+
+/* line 320, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.main-content-wrapper {
+  background: #f1f1f1; }
+
+/* line 324, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.theme-default #header {
+  background: #fff;
+  border-bottom: 1px solid #dee2e7;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08); }
+
+/* line 330, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.pageheader {
+  background: #f6f8f8;
+  border-bottom: 1px solid #dee2e7;
+  padding: 15px 35px;
+  position: relative; }
+  /* line 335, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .pageheader h1 {
+    display: inline;
+    font-size: 1.6em; }
+
+/* line 341, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.panel {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 3px; }
+
+/* line 355, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.theme-default.sidebar-mini .sidebar-left .nav > li.active > a,
+.theme-default.sidebar-mini .sidebar-left .nav > li.active > a:focus,
+.theme-default.sidebar-mini .sidebar-left .nav > li.active > a:hover,
+.theme-default .sidebar-left .nav > li.active > a,
+.theme-default .sidebar-left .nav > li.active > a:focus,
+.theme-default .sidebar-left .nav > li.active > a:hover {
+  color: #0190da;
+  background-color: #1d212a;
+  border-right: 6px solid #0190da; }
+
+/* line 361, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.form-control {
+  border: 2px solid #f3f3f3;
+  border-radius: 2px;
+  box-shadow: none;
+  background: #f1f1f1;
+  height: 50px;
+  padding: 8px 12px 9px 12px;
+  border-radius: 0px; }
+
+/* line 371, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.sidebar-profile .profile-body h4 {
+  color: #0190da;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-weight: 600; }
+
+/* line 378, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.panel-info > .panel-heading {
+  color: #0190da;
+  border: 1px solid #d9edf7;
+  background: #d9edf7;
+  border-bottom: 1px solid transparent;
+  background-color: #d9edf7;
+  border-color: #bce8f1; }
+
+/* line 388, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.sidebar-left a:focus,
+.sidebar-left a:hover {
+  color: #ddd;
+  background-color: transparent; }
+
+/* line 393, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+body {
+  background-color: #f1f1f1; }
+
+/* line 400, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.btn-primary,
+a.btn-primary:link,
+a.btn-primary:visited,
+a.btn-primary:focus {
+  color: #fff;
+  background-color: #0190da; }
+
+/* line 407, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active {
+  color: #fff;
+  background-color: #43befe;
+  border-color: #43befe; }
+
+/* line 415, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.btn-default,
+a.btn-default:link,
+a.btn-default:visited {
+  color: #fff;
+  background-color: #d6d6d6; }
+
+/* line 422, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active {
+  color: #fff;
+  background-color: #d9d9d9; }
+
+/* line 430, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.sidebar-profile .profile-body h4 {
+  color: #fff;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-weight: 600; }
+
+/* line 439, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.sidebar-left .active > a,
+.sidebar-left .active > a:focus,
+.sidebar-left .active > a:hover {
+  color: #0190da; }
+
+/* line 444, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.panel-info .text {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  padding: 5px 10px;
+  border-radius: 3px; }
+
+/* line 453, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.modal-footer > button > a {
+  color: #fff; }
+
+/* line 457, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.button-space {
+  margin-top: 20px; }
+
+/* line 461, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.video-panel {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.02);
+  margin-bottom: 20px; }
+
+/* line 467, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.video-upload {
+  padding: 20px 10px; }
+
+/* line 471, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.tab-wrapper {
+  background: #fff;
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 3px; }
+
+/* line 482, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.tab-wrapper > .nav-tabs {
+  border: 0px;
+  background: #f1f1f1;
+  padding-bottom: 0px;
+  margin-bottom: 15px; }
+  /* line 487, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .tab-wrapper > .nav-tabs .btn {
+    margin: 8px;
+    font-size: 14px;
+    padding: 5px 15px 5px 7px; }
+
+/* line 494, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.tab-wrapper > .nav-tabs > li > a {
+  color: #59ba8b;
+  padding: 11px 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 0px;
+  border-top: 3px solid #f1f1f1;
+  -webkit-transition: color 0.2s linear, border-bottom 0.2s linear, background-color 0.2s linear;
+  -moz-transition: color 0.2s linear, border-bottom 0.2s linear, background-color 0.2s linear;
+  -o-transition: color 0.2s linear, border-bottom 0.2s linear, background-color 0.2s linear;
+  transition: color 0.2s linear, border-bottom 0.2s linear, background-color 0.2s linear; }
+
+/* line 507, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.tab-wrapper > .nav-tabs > li > a:hover {
+  color: #717171;
+  background: #f1f1f1; }
+
+/* line 513, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.tab-wrapper > .nav-tabs > li.active > a {
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: #ffffff;
+  color: #717171;
+  border-top: 3px solid #59ba8b; }
+
+/* line 523, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.tab-wrapper .tab-content {
+  border: 0px; }
+
+/* line 527, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.social-switch {
+  margin-top: 10px; }
+
+/* line 531, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+#popup {
+  background: #59ba8b;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  z-index: 5000;
+  display: none;
+  color: #fff; }
+
+/* line 544, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.pagination {
+  margin: 10px; }
+
+/* line 548, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.new-post {
+  margin: 10px 20px;
+  cursor: pointer;
+  font-weight: 700; }
+  /* line 552, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+  .new-post i {
+    margin-right: 5px; }
+
+/* line 558, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.search-btn {
+  height: 50px !important; }
+
+/* line 565, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px; }
+
+/* line 570, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 75px;
+  cursor: pointer; }
+
+/* line 578, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute; }
+
+/* line 583, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  left: 0;
+  top: -3px;
+  width: 65px;
+  height: 30px;
+  background: #DDDDDD;
+  border-radius: 15px;
+  transition: background-color 0.2s; }
+
+/* line 591, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s;
+  border-radius: 50%;
+  background: #7F8C9A;
+  top: 2px;
+  left: 5px; }
+
+/* on checked */
+/* line 600, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:checked + label:before {
+  background: #222222; }
+
+/* line 603, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:checked + label:after {
+  background: #0190da;
+  top: 2px;
+  left: 40px; }
+
+/* line 610, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:checked + label .ui,
+[type="checkbox"]:not(:checked) + label .ui:before,
+[type="checkbox"]:checked + label .ui:after {
+  position: absolute;
+  left: 6px;
+  width: 65px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22px;
+  transition: all 0.2s; }
+
+/* line 620, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:not(:checked) + label .ui:before {
+  content: "no";
+  left: 32px; }
+
+/* line 624, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:checked + label .ui:after {
+  content: "yes";
+  color: #0190da; }
+
+/* line 628, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+[type="checkbox"]:focus + label:before {
+  border: 1px dashed #777;
+  box-sizing: border-box;
+  margin-top: -1px; }
+
+/* line 634, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+#linkURL {
+  display: none; }
+
+/* line 637, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.image-edit {
+  padding: 20px; }
+
+/* line 642, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+#filter-image img {
+  width: 100%; }
+
+/* line 648, /Users/mark/appsson-theme/backend/assets/sass/_appsson.scss */
+.active-filter {
+  opacity: 0.5; }
+
+/*# sourceMappingURL=main.css.map */

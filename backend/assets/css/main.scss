@@ -12,6 +12,7 @@
 // Variables, Mixins
 @import "../../../SASS/_variables.scss"; 
 @import "../../../SASS/_mixins.scss"; 
+
  
 @import "../../../SASS/_base.scss";
 @import "../../../SASS/_page-loader.scss";  
@@ -19,8 +20,9 @@
 @import "../../../SASS/_left-sidebar.scss";
 @import "../../../SASS/_main-content.scss";
 @import "../../../SASS/_right-sidebar.scss"; 
-@import "../../../SASS/_profile-status.scss";
 @import "../../../SASS/_buttons.scss";
+
+@import "../../../SASS/_profile-status.scss";
 @import "../../../SASS/_progress.scss"; 
 @import "../../../SASS/_panels.scss";
 @import "../../../SASS/_widgets.scss";

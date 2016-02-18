@@ -1,0 +1,13 @@
+{
+  "path": {
+    "backend/assets/css/main.scss": {
+      "sass.enabled": true,
+      "sass.options": {
+        "outputDir": "main.css",
+        "imagePath": null,
+        "sourceComments": "map",
+        "outputStyle": "nested"
+      }
+    }
+  }
+}

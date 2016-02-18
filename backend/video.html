@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NeuBoard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/simple-line-icons.css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Daterange Picker -->
+    <link rel="stylesheet" href="assets/plugins/daterangepicker/daterangepicker-bs3.css">
+    <!-- Calendar demo -->
+    <link rel="stylesheet" href="assets/css/clndr.css">
+    <!-- Switchery -->
+    <link rel="stylesheet" href="assets/plugins/switchery/switchery.min.css">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Feature detection -->
+    <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/vendor/html5shiv.js"></script>
+    <script src="assets/js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <section id="main-wrapper" class="theme-default">
+        <header id="header">
+            <!--logo start-->
+            <div class="brand">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/logo.png"></img>
+                    </a>
+                                       
+
+            </div>
+            <!--logo end-->
+            <ul class="nav navbar-nav navbar-left">
+                <li class="toggle-navigation toggle-left">
+                    <button class="sidebar-toggle" id="toggle-left">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </li>
+                <li class="toggle-profile hidden-xs">
+                    <button type="button" class="btn btn-default" id="toggle-profile">
+                        <i class="icon-user"></i>
+                    </button>
+                </li>
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="profile header-menu">
+        <a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i></a>
+      </li>
+                <li class="dropdown profile hidden-xs">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="meta">
+                            <span class="avatar">
+                                <img src="assets/img/profile.jpg" class="img-circle" alt="">
+                            </span>
+                        <span class="text">Mike Adams</span>
+                        <span class="caret"></span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight" role="menu">
+                        <li>
+                            <span class="arrow top"></span>
+                            <h5>
+                                <span>80%</span>
+                                <small class="text-muted">Profile complete</small>
+                            </h5>
+                            <div class="progress progress-xs">
+                                <div class="progress-bar progress-bar" style="width: 80%">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-user"></i>
+                                </span>My Account</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-envelope"></i>
+                                </span>Messages</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-cog"></i>
+                                </span>Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-sign-out"></i>
+                                </span>Logout</a>
+                        </li>
+                    </ul>
+                </li>
+                 <li class="toggle-fullscreen hidden-xs">
+                    <button type="button" class="btn btn-default expand" id="toggle-fullscreen">
+                        <i class="fa fa-expand"></i>
+                    </button>
+                </li>
+                
+            </ul>
+        </header>
+        <!--sidebar left start-->
+        <aside class="sidebar sidebar-left">
+            <div class="sidebar-profile">
+                <div class="avatar">
+                    <img class="img-circle profile-image" src="assets/img/profile.jpg" alt="profile">
+                    <i class="on border-dark animated bounceIn"></i>
+                </div>
+                <div class="profile-body dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><h4>Mike Adams <span class="caret"></span></h4></a>
+                    <small class="title">Front-end Developer</small>
+                    <ul class="dropdown-menu animated fadeInRight" role="menu">
+                        <li class="profile-progress">
+                            <h5>
+                                <span>80%</span>
+                                <small>Profile complete</small>
+                            </h5>
+                            <div class="progress progress-xs">
+                                <div class="progress-bar progress-bar-primary" style="width: 80%">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-user"></i>
+                                </span>My Account</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-envelope"></i>
+                                </span>Messages</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-cog"></i>
+                                </span>Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="icon"><i class="fa fa-sign-out"></i>
+                                </span>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <h5 class="sidebar-header">Navigation</h5>
+                <ul class="nav nav-pills nav-stacked">
+                    <li >
+                        <a href="company-name.html" title="Dashboard">
+                            <i class="fa fa-bank fa-fw"></i> Company Name
+                        </a>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" title="UI Elements">
+                            <i class="fa fa-file-image-o fa-fw"></i> Theme
+                        </a>
+                        <ul class="nav-sub">
+                            <li>
+                                <a href="background.html" title="Background">
+                                     Background
+                                </a>
+                            </li>
+                            <li>
+                                <a href="navigation.html" title="Navigation">
+                                     Navigation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="app-button.html" title="App button">
+                                     App button
+                                </a>
+                            </li>
+                          
+
+                           
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="photos.html" title="Photos">
+                            <i class="fa fa-photo fa-fw"></i> Photos
+                        </a>
+                    
+                    </li>
+                    <li>
+                        <a href="map.html" title="Map">
+                            <i class="fa  fa-fw fa-map-marker"></i> Map
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="phone.html" title="Phone">
+                            <i class="fa fa-phone fa-fw"></i> Phone
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="form.html" title="Form">
+                            <i class="fa fa-pencil-square-o fa-fw"></i> Form
+                        </a>
+                        
+                    </li>
+                    <li >
+                         <a href="social.html" title="Social">
+                            <i class="fa fa-share-alt-square fa-fw"></i> Social
+                           
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="news.html" title="News">
+                            <i class="fa fa-newspaper-o fa-fw"></i> News
+                        </a>
+                      
+                    </li>
+                    <li>
+                        <a href="special.html" title="Special">
+                            <i class="fa fa-certificate fa-fw"></i> Special
+                            
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="video.html" title="Video">
+                            <i class="fa fa-video-camera fa-fw"></i> Video
+                        </a>
+                      
+                    </li>
+                    <li>
+                        <a href="promote.html" title="Promote">
+                            <i class="fa fa-globe fa-fw"></i> Promote
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="push-notification.html" title="Push Notification">
+                            <i class="fa fa-bell fa-fw"></i> Push Notifications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="security.html" title="Security">
+                            <i class="fa fa-lock fa-fw"></i> Security
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h5 class="sidebar-header">Account Settings</h5>
+            <div class="setting-list">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <label for="check1" class="control-label">Share your status</label>
+                    </div>
+                    <div class="col-xs-4">
+                        <input type="checkbox" class="js-switch" checked id="check1" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <label for="check2" class="control-label">Push Notifications</label>
+                    </div>
+                    <div class="col-xs-4">
+                        <input type="checkbox" class="js-switch" id="check2" />
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!--sidebar left end-->
+     <section class="main-content-wrapper">
+    <!-- Main content view  -->
+    
+    <div class="pageheader">
+  <h1>Video</h1>
+</div>
+<section id="main-content" class="animated fadeInUp">
+ 
+ 
+ 
+  <div class="col-md-6 form-block">
+    <div class="panel panel-info">
+                            <div class="panel-heading">
+                                 <h3 class="panel-title">About this step</h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body"><div class="text">
+                                 Add a video here to share on your app. You can upload your own video or simply add a link from youtube
+                                </div></div>
+                        </div>
+    
+                   
+                    
+   
+   
+
+        <div class="tab-wrapper">
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a href="#news-list" data-toggle="tab" aria-expanded="true">Video Link</a>
+      </li>
+      <li class="">
+        <a href="#news-settings" data-toggle="tab" aria-expanded="false">Custom Video</a>
+      </li>
+     
+    </ul>     
+ <div class="tab-content">
+     <div class="tab-pane active" id="news-list">
+        <div class="form-group url optional video_video_url"><label class="file optional control-label" for="company_logo"></label><input class="string url optional form-control" type="url" value="https://www.youtube.com/watch?v=P7YMI39sObY" name="video[video_url]" id="video_video_url"></div> 
+         <div class="form-group radio_buttons optional video_use_file"><span class="radio inline-radio"><label for="video_use_file_false"><input class="radio_buttons optional" readonly="readonly" type="radio" value="false" checked="checked" name="video[use_file]" id="video_use_file_false">Use YouTube video link</label></span></div>
+     </div>
+     <div class="tab-pane" id="news-settings">
+        <fieldset id="video_file_wrapper" class="hidden">
+      <div class="form-group file optional video_file"><label class="file optional control-label" for="video_file">Video File</label><input data-max-file-size="31457280" class="file optional" type="file" name="video[file]" id="video_file"></div>
+      
+      <div class="panel panel-solid-success instruction-text">
+        <div class="panel-body">
+          <p>Allowable video formats: <b>MPEG-4</b>.<br>Max size: <b>30MB</b>.</p>
+        </div>
+      </div>
+    </fieldset> 
+     <div class="form-group file optional company_logo">
+        
+         <div class="form-group">
+                                       
+                                        <input type="file" name="file" class="inputfile" id="exampleInputFile">
+                                         <label for="exampleInputFile"><i class="fa fa-upload"></i>Choose a file...</label>
+
+                                        <p class="help-block">We recommend you use mpeg or m4a format</p>
+                                    </div>
+       
+        </div>
+        <div class="video-panel">
+        <div><strong>Uploaded Video</strong> - dd/mm/yy
+        <span class="pull-right"><i class="fa fa-trash-o"></i></span>
+        </div>
+        <div>
+        <img class="video-upload" src="assets/img/v-thumbnail.png">
+     </div>
+        </div> 
+          <div class="form-group radio_buttons optional video_use_file"><span class="radio inline-radio"><label for="video_use_file_true"><input class="radio_buttons optional" type="radio" value="true" name="video[use_file]" id="video_use_file_true">Use uploaded video</label></span></div>
+
+     </div>
+              <input type="submit" name="commit" value="Save" class="button-space btn btn-primary">
+         
+    
+     
+
+ 
+    
+     </div>
+    
+ 
+
+    </div>
+    </div>
+    
+  <div class="col-md-6 phone-iframe-wrapper">
+    <img src="assets/img/iphone.png" width="320" height="568"></img>
+  </div>
+
+</section>
+
+    <!-- Footer -->
+    
+  </section>
+    </section>
+    <!--sidebar right start-->
+    
+    <!--/sidebar right end-->
+    
+        <!-- Basic Modal -->
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header first-step">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h1 class="modal-title" id="myModalLabel">Congratulations</h1>
+                </div>
+                <div class="modal-body">
+                    <p>You've started the beautiful journey of creating your app - keep moving along and you'll be done in no time :)</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Not just yet</button>
+                    <button type="button" class="btn btn-primary">Next step</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Basic Modal -->
+    <!--Config demo-->
+   
+    <!--/Config demo-->
+    <!--Global JS-->
+    <script src="assets/js/vendor/jquery-1.11.1.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/navgoco/jquery.navgoco.min.js"></script>
+    <script src="assets/plugins/pace/pace.min.js"></script>
+    <script src="assets/plugins/fullscreen/jquery.fullscreen-min.js"></script>
+    <script src="assets/js/src/app.js"></script>
+    <!--Page Level JS-->
+    <script src="assets/plugins/countTo/jquery.countTo.js"></script>
+    <script src="assets/plugins/weather/js/skycons.js"></script>
+    <script src="assets/plugins/daterangepicker/moment.min.js"></script>
+    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- ChartJS  -->
+    <script src="assets/plugins/chartjs/Chart.min.js"></script>
+    <!-- Morris  -->
+    <script src="assets/plugins/morris/js/morris.min.js"></script>
+    <script src="assets/plugins/morris/js/raphael.2.1.0.min.js"></script>
+    <!-- Vector Map  -->
+    <script src="assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- Gauge  -->
+    <script src="assets/plugins/gauge/gauge.min.js"></script>
+    <script src="assets/plugins/gauge/gauge-demo.js"></script>
+    <!-- Calendar  -->
+    <script src="assets/plugins/calendar/clndr.js"></script>
+    <script src="assets/plugins/calendar/clndr-demo.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <!-- Switch -->
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <!--Load these page level functions-->
+    <script>
+    $(document).ready(function() {
+        app.dateRangePicker();
+        app.chartJs();
+        app.weather();
+        app.spinStart();
+        app.spinStop();
+    });
+    </script>
+</body>
+
+</html>
