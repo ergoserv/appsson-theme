@@ -1,18 +1,21 @@
 #contact {
-    background: #1D212A;
-    padding: 75px 0;
-    h1 {
+      padding: 75px 0;
+    background:url("../img/background-green.png");
+   
+    h1,p {
         color: #fff;
     }
+    label{color:#fff;}
     .spacer {
         height: 2px;
         width: 40px;
         margin: 20px auto;
-        background: #fff;
+        
     }
     .contact-info {
         color: #fff;
-        margin: 25px 0;
+        margin: 15px 0;
+        font-size: $size20px;
         i {
             font-size: 1.8em;
         }
@@ -21,26 +24,46 @@
             padding: 6px 0;
         }
     }
+    
+    .btn{
+                margin-left:20px;
+               color:#fff;
+                border:2px solid #fff;
+                background-color:$appssonGreen;
+            }
+            .btn:hover{
+                background-color:$appssonGreenHover;
+            }
+    
+    
+    .contact-text{
+            background: rgba(0,0,0,0.1);
+    padding: 40px 20px;
+        
+        i{
+            margin-right:20px;
+        }
+    }
     .contact-form {
         ::-webkit-input-placeholder {
-            color: #788093
+            color: #222
         }
         :-moz-placeholder {
-            color: #788093
+            color: #222
         }
         ::-moz-placeholder {
-            color: #788093
+            color: #222
         }
         :-ms-input-placeholder {
-            color: #788093
+            color: #222
         }
         .form-control {
             border-radius: 0;
-            border-color: #788093;
-            background: #1D212A;
-            color: #fff;
+            border-color: #fff;
+            background: #fff;
+            color: #222;
             margin-bottom: 12px;
-            padding: 18px 10px;
+            padding: 28px 10px;
             line-height: 17px;
             margin-bottom: 30px;
         }

@@ -1,11 +1,12 @@
 #features{
-	background: #F0F3F6;
+	        background:url("../img/background-pattern.png");
+
 	padding:75px 0;
 	    .spacer {
         height: 2px;
         width: 40px;
         margin: 20px auto;
-        background: $successColor;
+        
     }
 	header{
 		  margin-bottom: 75px;
@@ -13,6 +14,7 @@
 	.icon-wrapper{
 		  display: inline-block;
 		   margin-bottom: 20px;
+        padding:20px;
 	}
 	.icon-circle{ 
 		 padding: 5px 0;
@@ -27,4 +29,19 @@
 			 display: inline-block;
 		}
 	}
+    .pricing-panel{
+        padding:30px;
+        box-shadow:0px 0px 4px rgba(0,0,0,0.2);
+        h2{
+            font-size:$size35px;
+            color:$successColor;
+        }
+        .btn{
+            margin:30px 0px;
+        }
+        a.pricing-contact{
+            font-weight:800;
+            color:$appssonGreen;
+        }
+    }
 } 

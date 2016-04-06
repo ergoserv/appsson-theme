@@ -1,18 +1,29 @@
 #intro {
     position: relative;
+    
+    
     .spacer {
         height: 2px;
         width: 40px;
         margin: 20px auto;
-        background: $successColor;
+       
+    }
+    
+    .hero-graphic{
+        position:relative;
+        
     }
     .hero {
         position: relative;
-        margin-top: 75px;
+        margin-top: 80px;
         header h1 {
-            color: #fff;
-            line-height: 1.3em;
+            color: #222;
+            font-size: 2.8em;
+            line-height: 1.4em;
         }
+        header h2 {
+               margin-bottom:20px;
+            }
         .features {
             margin: 0;
             padding: 0;
@@ -24,11 +35,60 @@
             padding: 3px 0;
         }
     }
-    .overlay-bg {
-        background: $successColor;
-        position: relative;
-        height: 428px;
+    
+    .intro-text{
+        header h1 {
+            color: #fff;
+            
+        }
+        .icon-wrapper{
+            span{
+                font-size:6em;
+                font-style: italic;
+                font-weight: 800;
+                color:#fff;
+                text-shadow:10px 10px 0px rgba(255,255,255,0.4);
+                border-bottom:5px solid #fff;
+            }
+           
+        }
+         p{
+             margin-top:20px;
+             margin-bottom: 60px;
+             color:#fff;
+             
+        }
+        .intro-pitch{
+            position: relative;
+            
+            margin-bottom:0px;
+            
+            .btn{
+                margin-left:20px;
+                border:2px solid #fff;
+                background-color:$successColor;
+            }
+            .btn:hover{
+                background-color:$successColorHover;
+            }
+        }
+        
     }
+    .overlay-bg {
+        position:relative;
+        height:700px;
+        img{
+            
+            position: absolute;
+    width: 100%;
+    bottom:0px;
+    right: 0px;
+        }
+    }
+     .overlay-bg-lite {
+    position: relative;
+    background: #0190da;
+}
     .call-to-action > a {
         margin: 10px;
     }
@@ -36,18 +96,38 @@
         margin: 65px 0;
     }
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1600px) {
     #intro {
         .overlay-bg {
-            height: 325px;
+            height: 600px;
         }
         .hero {
-            margin-top: 30px;
+            margin-top: 80px;
             header {
                 margin-top: 0;
             }
             header h1 {
-                font-size: $size18px;
+                font-size: 2.8em;
+            line-height: 1.4em;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #intro {
+        .overlay-bg {
+            height: 500px;
+        }
+        .hero {
+            margin-top: 80px;
+            header {
+                margin-top: 0;
+            }
+            header h1 {
+                 font-size: 2.8em;
+            line-height: 1.4em;
             }
         }
     }
@@ -55,15 +135,16 @@
 @media (max-width: 992px) {
     #intro {
         .overlay-bg {
-            height: 300px;
+            height: 500px;
         }
         .hero {
-            margin-top: 20px;
+            margin-top: 80px;
             header {
                 margin-top: 0;
             }
             header h1 {
-                font-size: $size18px;
+                 font-size: 2.5em;
+            line-height: 1.2em;
             }
             .features li {
                 font-size: $size13px
@@ -109,3 +190,5 @@
         }
     }
 }
+
+

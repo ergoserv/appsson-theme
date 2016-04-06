@@ -1,0 +1,75 @@
+#signup{
+    
+    
+        padding: 100px 0px 300px;
+        text-align:center;
+     
+    p{
+             font-size: 1em;
+   
+    }
+
+    .panel-logo{
+            margin-left: -33px;
+
+    }
+    
+    .panel-body {
+    padding: 20px 45px;
+    border:none;
+}
+    
+    .btn{
+        
+        width:100%;
+        font-size: 1em;
+    }
+    
+    .btn.btn-fb{
+    background-color:#3b5998;    
+        
+    }
+    
+    .panel-title{
+        font-size:1.3em;
+        color:#222;
+    }
+    .form-control {
+
+    height: 45px;
+    font-size: 1em;
+    background-color: #e8e8e8;
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px 42px;
+    
+    }
+    
+    .panel-primary>.panel-heading {
+        border:none;
+    color: #fff;
+    
+    
+    
+}
+    .help-block{
+      font-weight:800;
+        color:$appssonGreen;
+        
+    }
+    
+    #login-wrapper .form-group .sign{
+       position: absolute;
+    left: 27px;
+    top: 19px;
+}
+
+.panel-heading {
+    padding: 20px 15px;
+    background:#fff;
+    border:0px;
+}
+    .panel-primary {
+border:0px;
+    }
+}

@@ -1,16 +1,32 @@
  #testimonials {
-     background: url(../img/testimonials-bg.jpg) 50% 0 no-repeat fixed;
+     background: url(../img/background-pattern-dark.png) 100% 0 no-repeat fixed;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
      color: white;
-     height: 300px;
+     height: 760px;
+     
+     header h1{
+             color: #fff;
+    margin: 90px 0px 10px;
+     }
+     
+     
+     .testimonial-image{
+         border-radius: 200px;
+         margin-bottom: 30px;
+         
+     }
+     .testimonial-text{
+         padding:20px;
+         background:rgba(0,0,0,0.8)
+     }
      .inner {
-         background-color: $successColor;
+        
          width: 100%;
          height: 100%;
-         background-color: rgba(30, 153, 146, 0.5);
+        
      }
      .item {
          width: 100%;

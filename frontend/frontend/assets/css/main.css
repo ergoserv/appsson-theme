@@ -11,7 +11,7 @@ html {
   font-size: 100%; }
 
 body {
-  color: #222;
+  color: #788094;
   background: #fff;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -40,11 +40,12 @@ a:hover, a:active {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #222;
+  color: #13161C;
   margin: 0; }
 
 h1, .h1 {
-  font-size: 2em;
+  font-size: 1.625em;
+  text-transform: uppercase;
   margin: 15px 0 10px 0; }
 
 h2, .h2 {
@@ -63,7 +64,7 @@ h6, .h6 {
   font-size: 0.75em; }
 
 p {
-  font-size: 1.313em; }
+  font-size: 0.875em; }
 
 hr {
   margin-top: 10px;
@@ -82,11 +83,11 @@ img {
   border: none;
   font-size: 15px;
   font-weight: normal;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   padding: 8px 14px;
   margin-bottom: 5px;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -196,17 +197,17 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-info {
   color: #ffffff;
-  background-color: #999; }
+  background-color: #1F7BB6; }
 
 .btn-info, a.btn-info:link,
 a.btn-info:visited {
   color: #ffffff;
-  background-color: #999; }
+  background-color: #1F7BB6; }
 
 a.btn-info:hover,
 a.btn-info:active {
   color: #ffffff;
-  background-color: #a6a6a6; }
+  background-color: #238acc; }
 
 .btn-info:hover,
 .btn-info:focus,
@@ -214,14 +215,14 @@ a.btn-info:active {
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #a6a6a6;
-  border-color: #a6a6a6; }
+  background-color: #238acc;
+  border-color: #238acc; }
 
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  background: #999;
-  border-color: #999; }
+  background: #1F7BB6;
+  border-color: #1F7BB6; }
 
 .btn-info.disabled,
 .btn-info[disabled],
@@ -238,8 +239,8 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #999;
-  border-color: #999; }
+  background-color: #1F7BB6;
+  border-color: #1F7BB6; }
 
 .btn-danger {
   color: #ffffff;
@@ -281,7 +282,7 @@ fieldset[disabled] .btn-danger.active {
 .btn-success,
 a.btn-success {
   color: #ffffff;
-  background-color: #0190da; }
+  background-color: #27B6AF; }
 
 .btn-success:hover,
 .btn-success:focus,
@@ -289,14 +290,14 @@ a.btn-success {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #01a1f3;
-  border-color: #01a1f3; }
+  background-color: #2ccbc3;
+  border-color: #2ccbc3; }
 
 .btn-success:active,
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
-  background: #0190da;
-  border-color: #0190da; }
+  background: #27B6AF;
+  border-color: #27B6AF; }
 
 .btn-success.disabled,
 .btn-success[disabled],
@@ -313,8 +314,8 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #0190da;
-  border-color: #0190da; }
+  background-color: #27B6AF;
+  border-color: #27B6AF; }
 
 .btn-warning {
   color: #ffffff;
@@ -410,7 +411,7 @@ fieldset[disabled] .btn-warning.active {
   box-shadow: 0px 2px 0px #24aca5; }
 
 .btn-success.btn-3d:hover, .btn-success.btn-3d:focus {
-  background-color: #0190da; }
+  background-color: #27B6AF; }
 
 .btn-info.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #2273a5;
@@ -423,7 +424,7 @@ fieldset[disabled] .btn-warning.active {
   box-shadow: 0px 2px 0px #2273a5; }
 
 .btn-info.btn-3d:hover, .btn-info.btn-3d:focus {
-  background-color: #999; }
+  background-color: #1F7BB6; }
 
 .btn-warning.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #dbbd7d;
@@ -481,24 +482,24 @@ fieldset[disabled] .btn-warning.active {
   border: solid thin #556B8D; }
 
 .btn-success.btn-trans {
-  color: #0190da;
+  color: #27B6AF;
   background-color: transparent;
-  border: solid thin #0190da; }
+  border: solid thin #27B6AF; }
 
 .btn-success.btn-trans:hover, .btn-success.btn-trans:active, .btn-success.btn-trans:focus {
   color: #fff;
-  background-color: #01a1f3;
-  border: solid thin #0190da; }
+  background-color: #27B6AF;
+  border: solid thin #27B6AF; }
 
 .btn-info.btn-trans {
-  color: #fff;
+  color: #1F7BB6;
   background-color: transparent;
-  border: solid thin #999; }
+  border: solid thin #1F7BB6; }
 
 .btn-info.btn-trans:hover, .btn-info.btn-trans:active, .btn-info.btn-trans:focus {
   color: #fff;
-  background-color: #999;
-  border: solid thin #999; }
+  background-color: #1F7BB6;
+  border: solid thin #1F7BB6; }
 
 .btn-warning.btn-trans {
   color: #EDCE8C;
@@ -523,7 +524,7 @@ fieldset[disabled] .btn-warning.active {
 /* Button Sizes */
 .btn-lg {
   padding: 10px 16px;
-  font-size: 1.625em;
+  font-size: 1.125em;
   line-height: 1.33; }
 
 .btn-sm {
@@ -555,7 +556,7 @@ fieldset[disabled] .btn-warning.active {
     background: #fff;
     display: inline-block;
     position: fixed;
-    padding: 15px 0;
+    padding: 105px 0;
     z-index: 100;
     border-width: 0 0 1px; }
   .navbar-wrapper .logo {
@@ -578,13 +579,13 @@ fieldset[disabled] .btn-warning.active {
     font-weight: 700; }
   .navbar-wrapper .navbar-nav > li a:hover {
     background: none;
-    color: #0190da; }
+    color: #27B6AF; }
   .navbar-wrapper .navbar-default .navbar-nav > .active > a, .navbar-wrapper .navbar-default .navbar-nav > .active > a:hover, .navbar-wrapper .navbar-default .navbar-nav > .active > a:focus {
-    color: #0190da;
+    color: #27B6AF;
     background-color: #fff; }
   .navbar-wrapper .navbar-default .navbar-toggle {
-    background-color: #0190da;
-    border-color: #0190da; }
+    background-color: #27B6AF;
+    border-color: #27B6AF; }
   .navbar-wrapper .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff; }
   .navbar-wrapper .navbar-default .navbar-collapse, .navbar-wrapper .navbar-default .navbar-form {
@@ -608,18 +609,14 @@ fieldset[disabled] .btn-warning.active {
   #intro .spacer {
     height: 2px;
     width: 40px;
-    margin: 20px auto; }
-  #intro .hero-graphic {
-    position: relative; }
+    margin: 20px auto;
+    background: #27B6AF; }
   #intro .hero {
     position: relative;
-    margin-top: 80px; }
+    margin-top: 105px; }
     #intro .hero header h1 {
-      color: #222;
-      font-size: 2.8em;
-      line-height: 1.4em; }
-    #intro .hero header h2 {
-      margin-bottom: 20px; }
+      color: #fff;
+      line-height: 1.3em; }
     #intro .hero .features {
       margin: 0;
       padding: 0;
@@ -628,76 +625,34 @@ fieldset[disabled] .btn-warning.active {
       color: #fff;
       font-weight: 600;
       padding: 3px 0; }
-  #intro .intro-text header h1 {
-    color: #fff; }
-  #intro .intro-text .icon-wrapper span {
-    font-size: 6em;
-    font-style: italic;
-    font-weight: 800;
-    color: #fff;
-    text-shadow: 10px 10px 0px rgba(255, 255, 255, 0.4);
-    border-bottom: 5px solid #fff; }
-  #intro .intro-text p {
-    margin-top: 20px;
-    margin-bottom: 60px;
-    color: #fff; }
-  #intro .intro-text .intro-pitch {
-    position: relative;
-    margin-bottom: 0px; }
-    #intro .intro-text .intro-pitch .btn {
-      margin-left: 20px;
-      border: 2px solid #fff;
-      background-color: #0190da; }
-    #intro .intro-text .intro-pitch .btn:hover {
-      background-color: #01a1f3; }
   #intro .overlay-bg {
+    background: #27B6AF;
     position: relative;
-    height: 700px; }
-    #intro .overlay-bg img {
-      position: absolute;
-      width: 100%;
-      bottom: 0px;
-      right: 0px; }
-  #intro .overlay-bg-lite {
-    position: relative;
-    background: #0190da; }
+    height: 428px; }
   #intro .call-to-action > a {
     margin: 10px; }
   #intro .intro-text {
     margin: 65px 0; }
 
-@media (max-width: 1600px) {
-  #intro .overlay-bg {
-    height: 600px; }
-  #intro .hero {
-    margin-top: 80px; }
-    #intro .hero header {
-      margin-top: 0; }
-    #intro .hero header h1 {
-      font-size: 2.8em;
-      line-height: 1.4em; } }
-
 @media (max-width: 1200px) {
   #intro .overlay-bg {
-    height: 500px; }
+    height: 325px; }
   #intro .hero {
-    margin-top: 80px; }
+    margin-top: 30px; }
     #intro .hero header {
       margin-top: 0; }
     #intro .hero header h1 {
-      font-size: 2.8em;
-      line-height: 1.4em; } }
+      font-size: 1.125em; } }
 
 @media (max-width: 992px) {
   #intro .overlay-bg {
-    height: 500px; }
+    height: 300px; }
   #intro .hero {
-    margin-top: 80px; }
+    margin-top: 20px; }
     #intro .hero header {
       margin-top: 0; }
     #intro .hero header h1 {
-      font-size: 2.5em;
-      line-height: 1.2em; }
+      font-size: 1.125em; }
     #intro .hero .features li {
       font-size: 0.813em; } }
 
@@ -725,18 +680,18 @@ fieldset[disabled] .btn-warning.active {
       display: none; } }
 
 #features {
-  background: url("../img/background-pattern.png");
+  background: #F0F3F6;
   padding: 75px 0; }
   #features .spacer {
     height: 2px;
     width: 40px;
-    margin: 20px auto; }
+    margin: 20px auto;
+    background: #27B6AF; }
   #features header {
     margin-bottom: 75px; }
   #features .icon-wrapper {
     display: inline-block;
-    margin-bottom: 20px;
-    padding: 20px; }
+    margin-bottom: 20px; }
   #features .icon-circle {
     padding: 5px 0;
     border: solid thin #788093;
@@ -748,39 +703,14 @@ fieldset[disabled] .btn-warning.active {
       font-size: 2.5em;
       padding: 20px;
       display: inline-block; }
-  #features .pricing-panel {
-    padding: 30px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); }
-    #features .pricing-panel h2 {
-      font-size: 2em;
-      color: #0190da; }
-    #features .pricing-panel .btn {
-      margin: 30px 0px; }
-    #features .pricing-panel a.pricing-contact {
-      font-weight: 800;
-      color: #58b889; }
 
 #pricing {
-  padding: 75px 0;
-  background: url("../img/background-pattern.png"); }
+  padding: 75px 0; }
   #pricing .spacer {
     height: 2px;
     width: 40px;
-    margin: 20px auto; }
-  #pricing .pricing-panel {
-    padding: 30px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); }
-    #pricing .pricing-panel h2 {
-      font-size: 2em;
-      color: #0190da; }
-    #pricing .pricing-panel .btn {
-      margin: 30px 0px;
-      color: #fff; }
-    #pricing .pricing-panel a.pricing-contact {
-      font-weight: 800;
-      color: #58b889; }
-  #pricing .pricing-panel.panel-body {
-    text-align: center; }
+    margin: 20px auto;
+    background: #27B6AF; }
   #pricing #plan1, #pricing #plan1 ul, #pricing #plan1 ul li, #pricing #plan2, #pricing #plan2 ul, #pricing #plan2 ul li, #pricing #plan3, #pricing #plan3 ul, #pricing #plan3 ul li, #pricing #plan4, #pricing #plan4 ul, #pricing #plan4 ul li {
     margin: 0;
     padding: 0;
@@ -807,10 +737,6 @@ fieldset[disabled] .btn-warning.active {
     margin: 0;
     padding: .6em 0; }
   #pricing .planContainer .title h2.bestPlanTitle {
-    background: #1F2329;
-    color: #fff;
-    border-radius: 5px 5px 0 0; }
-  #pricing .planContainer .title h2.freePlanTitle {
     background: #1F2329;
     color: #fff;
     border-radius: 5px 5px 0 0; }
@@ -843,7 +769,7 @@ fieldset[disabled] .btn-warning.active {
     width: 80%;
     height: 2.8em;
     margin: 1.5em 0 1.8em; }
-  #pricing .planContainer .button a.bestPlanButton, #pricing .planContainer .button a.freePlanButton {
+  #pricing .planContainer .button a.bestPlanButton {
     color: #fff; }
   #pricing #pricePlans {
     margin: 2em auto; }
@@ -865,35 +791,25 @@ fieldset[disabled] .btn-warning.active {
     background: #1F2329;
     color: #fff; }
   #pricing .planContainer .button a.bestPlanButton, #pricing .planContainer .price p.bestPlanPrice, #pricing .planContainer .button a.bestPlanButton {
-    background: #0190da;
-    border: 2px solid #0190da; }
-  #pricing .planContainer .button a.freePlanButton, #pricing .planContainer .price p.freePlanPrice, #pricing .planContainer .button a.freePlanButton {
-    background: #58b889;
-    border: 2px solid #58b889; }
+    background: #27B6AF;
+    border: 2px solid #27B6AF; }
   #pricing .planContainer .button a.bestPlanButton:hover {
-    background: #0190da;
-    border: 2px solid #0190da; }
+    background: #27B6AF;
+    border: 2px solid #27B6AF; }
 
 #testimonials {
-  background: url(../img/background-pattern-dark.png) 100% 0 no-repeat fixed;
+  background: url(../img/testimonials-bg.jpg) 50% 0 no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: white;
-  height: 760px; }
-  #testimonials header h1 {
-    color: #fff;
-    margin: 90px 0px 10px; }
-  #testimonials .testimonial-image {
-    border-radius: 200px;
-    margin-bottom: 30px; }
-  #testimonials .testimonial-text {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8); }
+  height: 300px; }
   #testimonials .inner {
+    background-color: #27B6AF;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    background-color: rgba(30, 153, 146, 0.5); }
   #testimonials .item {
     width: 100%;
     padding: 60px 0 0 0; }
@@ -924,7 +840,7 @@ fieldset[disabled] .btn-warning.active {
     height: 2px;
     width: 40px;
     margin: 20px auto;
-    background: #0190da; }
+    background: #27B6AF; }
   #team .team-wrapper {
     background: #fff;
     text-align: center;
@@ -950,7 +866,7 @@ fieldset[disabled] .btn-warning.active {
       height: 2px;
       width: 40px;
       margin: 20px auto;
-      background: #0190da; }
+      background: #27B6AF; }
     #team .team-wrapper p {
       max-height: 150px;
       overflow: hidden;
@@ -1062,57 +978,43 @@ fieldset[disabled] .btn-warning.active {
     margin-left: 10px; } }
 
 #contact {
-  padding: 75px 0;
-  background: url("../img/background-green.png"); }
-  #contact h1, #contact p {
-    color: #fff; }
-  #contact label {
+  background: #1D212A;
+  padding: 75px 0; }
+  #contact h1 {
     color: #fff; }
   #contact .spacer {
     height: 2px;
     width: 40px;
-    margin: 20px auto; }
+    margin: 20px auto;
+    background: #fff; }
   #contact .contact-info {
     color: #fff;
-    margin: 15px 0;
-    font-size: 1.25em; }
+    margin: 25px 0; }
     #contact .contact-info i {
       font-size: 1.8em; }
     #contact .contact-info span {
       display: block;
       padding: 6px 0; }
-  #contact .btn {
-    margin-left: 20px;
-    color: #fff;
-    border: 2px solid #fff;
-    background-color: #58b889; }
-  #contact .btn:hover {
-    background-color: #6ac096; }
-  #contact .contact-text {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 40px 20px; }
-    #contact .contact-text i {
-      margin-right: 20px; }
   #contact .contact-form ::-webkit-input-placeholder {
-    color: #222; }
+    color: #788093; }
   #contact .contact-form :-moz-placeholder {
-    color: #222; }
+    color: #788093; }
   #contact .contact-form ::-moz-placeholder {
-    color: #222; }
+    color: #788093; }
   #contact .contact-form :-ms-input-placeholder {
-    color: #222; }
+    color: #788093; }
   #contact .contact-form .form-control {
     border-radius: 0;
-    border-color: #fff;
-    background: #fff;
-    color: #222;
+    border-color: #788093;
+    background: #1D212A;
+    color: #fff;
     margin-bottom: 12px;
-    padding: 28px 10px;
+    padding: 18px 10px;
     line-height: 17px;
     margin-bottom: 30px; }
   #contact .form-control:focus {
     box-shadow: none;
-    border-color: #0190da; }
+    border-color: #27B6AF; }
 
 @media (max-width: 992px) {
   #contact .contact-form .form-group {
@@ -1152,184 +1054,3 @@ fieldset[disabled] .btn-warning.active {
     margin: 0 3px; }
   #footer .social i {
     font-size: 1em; }
-
-body.payment, body.signup {
-  background-color: #ffffff; }
-
-.navbar-wrapper .navbar-default {
-  width: 100%;
-  border: 0;
-  background: #fff;
-  display: inline-block;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  padding: 15px 0;
-  z-index: 100;
-  border-width: 0 0 1px; }
-
-#payment {
-  padding: 75px 0; }
-  #payment header h2 {
-    font-weight: 300; }
-  #payment a {
-    font-weight: 800;
-    color: #58b889; }
-  #payment .spacer {
-    height: 2px;
-    width: 40px;
-    margin: 20px auto; }
-  #payment .panel {
-    margin-top: 30px;
-    margin-bottom: 30px; }
-  #payment .pricing-panel {
-    margin: 20px;
-    padding: 10px; }
-    #payment .pricing-panel h2 {
-      font-size: 2em;
-      color: #0190da; }
-    #payment .pricing-panel .btn {
-      margin: 30px 0px;
-      color: #fff; }
-    #payment .pricing-panel a.pricing-contact {
-      font-weight: 800;
-      color: #58b889; }
-  #payment .pricing-panel.panel-body {
-    text-align: center; }
-  #payment #paymentOptions {
-    margin: 30px 0px; }
-    #payment #paymentOptions #monthly, #payment #paymentOptions #yearly {
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); }
-    #payment #paymentOptions .promoted {
-      transform: scale(1.08);
-      overflow: hidden; }
-    #payment #paymentOptions h2 {
-      font-size: 2em; }
-    #payment #paymentOptions h3 {
-      font-size: 2.6em; }
-    #payment #paymentOptions h3.selected {
-      color: #0190da; }
-    #payment #paymentOptions span {
-      display: block;
-      margin-top: 20px;
-      margin-bottom: 30px; }
-    #payment #paymentOptions button {
-      font-size: 2.6em;
-      margin-top: 40px;
-      padding-left: 50px;
-      padding-right: 50px; }
-  #payment .corner-ribbon {
-    width: 200px;
-    background: #e43;
-    position: absolute;
-    top: 25px;
-    left: -50px;
-    text-align: center;
-    line-height: 40px;
-    letter-spacing: 1px;
-    color: #f0f0f0;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg); }
-  #payment .corner-ribbon.shadow {
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
-  #payment .corner-ribbon.top-left {
-    top: 25px;
-    left: -50px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg); }
-  #payment label.btn span {
-    font-size: 1.5em; }
-  #payment label input[type="radio"] ~ i.fa.fa-circle-o {
-    color: #c8c8c8;
-    display: inline; }
-  #payment label input[type="radio"] ~ i.fa.fa-check-circle-o {
-    display: none; }
-  #payment label input[type="radio"]:checked ~ i.fa.fa-circle-o {
-    display: none; }
-  #payment label input[type="radio"]:checked ~ i.fa.fa-check-circle-o {
-    color: #7AA3CC;
-    display: inline; }
-  #payment label:hover input[type="radio"] ~ i.fa {
-    color: #7AA3CC; }
-  #payment label input[type="checkbox"] ~ i.fa.fa-square-o {
-    color: #c8c8c8;
-    display: inline; }
-  #payment label input[type="checkbox"] ~ i.fa.fa-check-square-o {
-    display: none; }
-  #payment label input[type="checkbox"]:checked ~ i.fa.fa-square-o {
-    display: none; }
-  #payment label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o {
-    color: #7AA3CC;
-    display: inline; }
-  #payment label:hover input[type="checkbox"] ~ i.fa {
-    color: #7AA3CC; }
-  #payment div[data-toggle="buttons"] label.active {
-    color: #7AA3CC; }
-  #payment div[data-toggle="buttons"] label {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 2em;
-    text-align: left;
-    white-space: nowrap;
-    vertical-align: top;
-    cursor: pointer;
-    background-color: none;
-    border: 0px solid  #c8c8c8;
-    border-radius: 3px;
-    color: #c8c8c8;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none; }
-  #payment div[data-toggle="buttons"] label:hover {
-    color: #7AA3CC; }
-  #payment div[data-toggle="buttons"] label:active, #payment div[data-toggle="buttons"] label.active {
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-
-#signup {
-  padding: 100px 0px 300px;
-  text-align: center; }
-  #signup p {
-    font-size: 1em; }
-  #signup .panel-logo {
-    margin-left: -33px; }
-  #signup .panel-body {
-    padding: 20px 45px;
-    border: none; }
-  #signup .btn {
-    width: 100%;
-    font-size: 1em; }
-  #signup .btn.btn-fb {
-    background-color: #3b5998; }
-  #signup .panel-title {
-    font-size: 1.3em;
-    color: #222; }
-  #signup .form-control {
-    height: 45px;
-    font-size: 1em;
-    background-color: #e8e8e8;
-    border: 0px;
-    border-radius: 0px;
-    padding: 0px 42px; }
-  #signup .panel-primary > .panel-heading {
-    border: none;
-    color: #fff; }
-  #signup .help-block {
-    font-weight: 800;
-    color: #58b889; }
-  #signup #login-wrapper .form-group .sign {
-    position: absolute;
-    left: 27px;
-    top: 19px; }
-  #signup .panel-heading {
-    padding: 20px 15px;
-    background: #fff;
-    border: 0px; }
-  #signup .panel-primary {
-    border: 0px; }

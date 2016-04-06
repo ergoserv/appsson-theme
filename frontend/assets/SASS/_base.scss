@@ -3,7 +3,7 @@ height: 100%;
 font-size:100%; 
 }
 body {
-    color: #788093; 
+    color: #222; 
     background: #fff;
     font-family:  $fontStack;
     font-size:100%;
@@ -29,12 +29,11 @@ a:hover, a:active {
 h1, h2, h3, h4, h5, h6 {
     font-family:  $fontHeader;
     font-weight: 600;
-     color: #13161C;
+     color: #222;
       margin:0;
 }
 h1,.h1 {
-  font-size: $size26px;
-  text-transform: uppercase;
+  font-size: $size35px;
   margin: 15px 0 10px 0;
 }
 
@@ -59,7 +58,7 @@ h6,.h6 {
   font-size: $size12px;
 }
 p {
-    font-size: $size14px;
+    font-size: $size21px;
 }
 hr {
     margin-top: 10px;
