@@ -125,25 +125,30 @@ img {
     opacity: 0.7;
     filter: alpha(opacity=70); }
 
-/* line 30, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+@media (min-width: 801px) {
+  /* line 31, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+  .btn-lg {
+    font-size: 1.625em; } }
+
+/* line 37, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn i {
   padding: 0 5px; }
 
 /* Default Buttons*/
-/* line 36, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 43, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default, a.btn-default:link, a.btn-default:visited {
   color: #ffffff;
   background-color: #909AA0;
   outline: none !important; }
 
-/* line 43, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 50, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 a.btn-default:hover,
 a.btn-default:active {
   color: #ffffff;
   background-color: #9ea7ac;
   border-color: #9ea7ac; }
 
-/* line 53, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 60, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
@@ -153,14 +158,14 @@ a.btn-default:active {
   background-color: #9ea7ac;
   border-color: #9ea7ac; }
 
-/* line 61, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 68, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   background: #909AA0;
   border-color: #909AA0; }
 
-/* line 79, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 86, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default.disabled, .btn-default[disabled],
 fieldset[disabled] .btn-default,
 .btn-default.disabled:hover,
@@ -178,18 +183,18 @@ fieldset[disabled] .btn-default.active {
   background-color: #909AA0;
   border-color: #909AA0; }
 
-/* line 84, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 91, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary, a.btn-primary:link, a.btn-primary:visited {
   color: #fff;
   background-color: #556B8D; }
 
-/* line 89, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 96, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 a.btn-primary:hover, a.btn-primary:active {
   color: #ffffff;
   background-color: #5f779d;
   border-color: #5f779d; }
 
-/* line 99, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 106, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
@@ -199,14 +204,14 @@ a.btn-primary:hover, a.btn-primary:active {
   background-color: #5f779d;
   border-color: #5f779d; }
 
-/* line 107, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 114, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   background: #556B8D;
   border-color: #556B8D; }
 
-/* line 126, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 133, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,
@@ -225,24 +230,24 @@ fieldset[disabled] .btn-primary.active {
   background-color: #556B8D;
   border-color: #556B8D; }
 
-/* line 131, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 138, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info {
   color: #ffffff;
   background-color: #999; }
 
-/* line 137, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 144, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info, a.btn-info:link,
 a.btn-info:visited {
   color: #ffffff;
   background-color: #999; }
 
-/* line 143, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 150, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 a.btn-info:hover,
 a.btn-info:active {
   color: #ffffff;
   background-color: #a6a6a6; }
 
-/* line 152, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 159, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info:hover,
 .btn-info:focus,
 .btn-info:active,
@@ -252,14 +257,14 @@ a.btn-info:active {
   background-color: #a6a6a6;
   border-color: #a6a6a6; }
 
-/* line 160, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 167, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
   background: #999;
   border-color: #999; }
 
-/* line 179, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 186, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info.disabled,
 .btn-info[disabled],
 fieldset[disabled] .btn-info,
@@ -278,12 +283,12 @@ fieldset[disabled] .btn-info.active {
   background-color: #999;
   border-color: #999; }
 
-/* line 184, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 191, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger {
   color: #ffffff;
   background-color: #e25d5d; }
 
-/* line 193, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 200, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
@@ -293,14 +298,14 @@ fieldset[disabled] .btn-info.active {
   background-color: #e67373;
   border-color: #e67373; }
 
-/* line 201, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 208, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
   background: #e67373;
   border-color: #e67373; }
 
-/* line 220, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 227, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger.disabled,
 .btn-danger[disabled],
 fieldset[disabled] .btn-danger,
@@ -319,13 +324,13 @@ fieldset[disabled] .btn-danger.active {
   background-color: #e25d5d;
   border-color: #e25d5d; }
 
-/* line 226, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 233, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success,
 a.btn-success {
   color: #ffffff;
   background-color: #0190da; }
 
-/* line 235, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 242, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
@@ -335,14 +340,14 @@ a.btn-success {
   background-color: #01a1f3;
   border-color: #01a1f3; }
 
-/* line 243, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 250, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success:active,
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   background: #0190da;
   border-color: #0190da; }
 
-/* line 262, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 269, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success.disabled,
 .btn-success[disabled],
 fieldset[disabled] .btn-success,
@@ -361,12 +366,12 @@ fieldset[disabled] .btn-success.active {
   background-color: #0190da;
   border-color: #0190da; }
 
-/* line 267, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 274, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning {
   color: #ffffff;
   background-color: #EDCE8C; }
 
-/* line 276, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 283, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning:active,
@@ -376,14 +381,14 @@ fieldset[disabled] .btn-success.active {
   background-color: #EDCE8C;
   border-color: #EDCE8C; }
 
-/* line 284, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 291, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning:active,
 .btn-warning.active,
 .open .dropdown-toggle.btn-warning {
   background: #f0d7a2;
   border-color: #f0d7a2; }
 
-/* line 303, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 310, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning.disabled,
 .btn-warning[disabled],
 fieldset[disabled] .btn-warning,
@@ -403,7 +408,7 @@ fieldset[disabled] .btn-warning.active {
   border-color: #EDCE8C; }
 
 /* 3d Buttons*/
-/* line 309, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 316, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn.btn-3d {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -414,115 +419,115 @@ fieldset[disabled] .btn-warning.active {
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-/* line 315, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 322, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn.btn-3d:active {
   -webkit-transform: translate(0, 3px);
   -moz-transform: translate(0, 3px);
   transform: translate(0, 3px); }
 
-/* line 320, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 327, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #858e93;
   -moz-box-shadow: 0px 6px 0px #858e93;
   box-shadow: 0px 6px 0px #858e93; }
 
-/* line 326, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 333, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default.btn-3d:hover,
 .btn-default.btn-3d:focus {
   background-color: #909AA0; }
 
-/* line 329, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 336, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default.btn-3d:active {
   -webkit-box-shadow: 0px 2px 0px #858e93;
   -moz-box-shadow: 0px 2px 0px #858e93;
   box-shadow: 0px 2px 0px #858e93; }
 
-/* line 334, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 341, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default.btn-3d:hover, .btn-default.btn-3d:focus {
   background-color: #909AA0; }
 
-/* line 337, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 344, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #4d617f;
   -moz-box-shadow: 0px 6px 0px #4d617f;
   box-shadow: 0px 6px 0px #4d617f; }
 
-/* line 342, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 349, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary.btn-3d:active {
   -webkit-box-shadow: 0px 2px 0px #4d617f;
   -moz-box-shadow: 0px 2px 0px #4d617f;
   box-shadow: 0px 2px 0px #4d617f; }
 
-/* line 347, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 354, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary.btn-3d:hover, .btn-primary.btn-3d:focus {
   background-color: #556B8D; }
 
-/* line 350, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 357, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #24aca5;
   -moz-box-shadow: 0px 6px 0px #24aca5;
   box-shadow: 0px 6px 0px #24aca5; }
 
-/* line 355, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 362, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success.btn-3d:active {
   -webkit-box-shadow: 0px 2px 0px #24aca5;
   -moz-box-shadow: 0px 2px 0px #24aca5;
   box-shadow: 0px 2px 0px #24aca5; }
 
-/* line 360, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 367, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success.btn-3d:hover, .btn-success.btn-3d:focus {
   background-color: #0190da; }
 
-/* line 363, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 370, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #2273a5;
   -moz-box-shadow: 0px 6px 0px #2273a5;
   box-shadow: 0px 6px 0px #2273a5; }
 
-/* line 368, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 375, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info.btn-3d:active {
   -webkit-box-shadow: 0px 2px 0px #2273a5;
   -moz-box-shadow: 0px 2px 0px #2273a5;
   box-shadow: 0px 2px 0px #2273a5; }
 
-/* line 373, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 380, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info.btn-3d:hover, .btn-info.btn-3d:focus {
   background-color: #999; }
 
-/* line 376, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 383, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #dbbd7d;
   -moz-box-shadow: 0px 6px 0px #dbbd7d;
   box-shadow: 0px 6px 0px #dbbd7d; }
 
-/* line 381, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 388, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning.btn-3d:active {
   -webkit-box-shadow: 0px 2px 0px #d6ae11;
   -moz-box-shadow: 0px 2px 0px #d6ae11;
   box-shadow: 0px 2px 0px #d6ae11; }
 
-/* line 386, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 393, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning.btn-3d:hover, .btn-warning.btn-3d:focus {
   background-color: #EDCE8C; }
 
-/* line 389, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 396, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger.btn-3d {
   -webkit-box-shadow: 0px 6px 0px #c94034;
   -moz-box-shadow: 0px 6px 0px #c94034;
   box-shadow: 0px 6px 0px #c94034; }
 
-/* line 394, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 401, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger.btn-3d:active {
   -webkit-box-shadow: 0px 2px 0px #c94034;
   -moz-box-shadow: 0px 2px 0px #c94034;
   box-shadow: 0px 2px 0px #c94034; }
 
-/* line 399, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 406, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger.btn-3d:hover, .btn-danger.btn-3d:focus {
   background-color: #e25d5d; }
 
 /* square buttons */
-/* line 403, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 410, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-square {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -531,86 +536,86 @@ fieldset[disabled] .btn-warning.active {
   border-radius: 0; }
 
 /* Transparent buttons */
-/* line 407, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 414, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default.btn-trans {
   color: #909AA0;
   background-color: transparent;
   border: solid thin #909AA0; }
 
-/* line 412, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 419, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-default.btn-trans:hover, .btn-default.btn-trans:active, .btn-default.btn-trans:focus {
   color: #fff;
   background-color: #909AA0;
   border: solid thin #909AA0; }
 
-/* line 417, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 424, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary.btn-trans {
   color: #556B8D;
   background-color: transparent;
   border: solid thin #556B8D; }
 
-/* line 422, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 429, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-primary.btn-trans:hover, .btn-primary.btn-trans:active, .btn-primary.btn-trans:focus {
   color: #fff;
   background-color: #556B8D;
   border: solid thin #556B8D; }
 
-/* line 427, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 434, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success.btn-trans {
   color: #0190da;
   background-color: transparent;
   border: solid thin #0190da; }
 
-/* line 432, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 439, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-success.btn-trans:hover, .btn-success.btn-trans:active, .btn-success.btn-trans:focus {
   color: #fff;
   background-color: #01a1f3;
   border: solid thin #0190da; }
 
-/* line 437, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 444, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info.btn-trans {
   color: #fff;
   background-color: transparent;
   border: solid thin #999; }
 
-/* line 442, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 449, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-info.btn-trans:hover, .btn-info.btn-trans:active, .btn-info.btn-trans:focus {
   color: #fff;
   background-color: #999;
   border: solid thin #999; }
 
-/* line 447, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 454, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning.btn-trans {
   color: #EDCE8C;
   background-color: transparent;
   border: solid thin #EDCE8C; }
 
-/* line 452, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 459, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-warning.btn-trans:hover, .btn-warning.btn-trans:active, .btn-warning.btn-trans:focus {
   color: #fff;
   background-color: #EDCE8C;
   border: solid thin #EDCE8C; }
 
-/* line 457, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 464, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger.btn-trans {
   color: #e25d5d;
   background-color: transparent;
   border: solid thin #e25d5d; }
 
-/* line 462, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 469, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-danger.btn-trans:hover, .btn-danger.btn-trans:active, .btn-danger.btn-trans:focus {
   color: #fff;
   background-color: #e25d5d;
   border: solid thin #e25d5d; }
 
 /* Button Sizes */
-/* line 468, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 475, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-lg {
   padding: 10px 16px;
-  font-size: 1.625em;
+  font-size: 1em;
   line-height: 1.33; }
 
-/* line 473, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 480, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-sm {
   padding: 5px 10px;
   font-size: 12px;
@@ -621,7 +626,7 @@ fieldset[disabled] .btn-warning.active {
   -o-border-radius: 3px;
   border-radius: 3px; }
 
-/* line 479, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
+/* line 486, /Users/mark/appsson-theme/frontend/assets/SASS/_buttons.scss */
 .btn-xs {
   padding: 1px 5px;
   font-size: 12px;
@@ -812,56 +817,57 @@ fieldset[disabled] .btn-warning.active {
       margin-top: 0; }
     /* line 128, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
     #intro .hero header h1 {
-      font-size: 2.8em;
-      line-height: 1.4em; } }
+      font-size: 2.5em;
+      line-height: 1.2em; } }
 
 @media (max-width: 992px) {
-  /* line 137, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+  /* line 138, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .overlay-bg {
     height: 500px; }
-  /* line 140, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+  /* line 141, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .hero {
     margin-top: 80px; }
-    /* line 142, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+    /* line 143, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
     #intro .hero header {
       margin-top: 0; }
-    /* line 145, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+    /* line 146, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
     #intro .hero header h1 {
-      font-size: 2.5em;
-      line-height: 1.2em; }
-    /* line 149, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+      font-size: 2.2em;
+      line-height: 1em; }
+    /* line 150, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
     #intro .hero .features li {
       font-size: 0.813em; } }
 
 @media (max-width: 768px) {
-  /* line 157, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+  /* line 158, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .overlay-bg {
     height: 280px; }
-  /* line 161, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+  /* line 162, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .hero header {
     margin-top: 20px;
     margin-top: 0; }
-  /* line 165, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+  /* line 166, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .hero header h1 {
-    font-size: 1em; }
-  /* line 168, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+    font-size: 2em;
+    line-height: 1em; }
+  /* line 170, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .hero .features li {
     font-size: 0.813em; } }
 
 @media (max-width: 480px) {
-  /* line 176, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+  /* line 178, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .overlay-bg {
     height: 275px; }
-  /* line 179, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+  /* line 181, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
   #intro .hero {
     margin-top: 20px; }
-    /* line 181, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+    /* line 183, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
     #intro .hero header {
       margin-top: 0; }
-    /* line 184, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
-    #intro .hero header h1 {
-      font-size: 1em; }
     /* line 187, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
+    #intro .hero header h2 {
+      font-size: 0.875em; }
+    /* line 190, /Users/mark/appsson-theme/frontend/assets/SASS/_intro.scss */
     #intro .hero .features li {
       display: none; } }
 
