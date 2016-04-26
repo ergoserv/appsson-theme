@@ -1,5 +1,5 @@
 body.payment, body.signup{
-    background-color:#ffffff;
+    background-color:  #eeeded;
 }
 
 .navbar-wrapper .navbar-default {
@@ -31,6 +31,23 @@ body.payment, body.signup{
         margin: 20px auto;
        
             
+    }
+    
+    #monthly, #yearly{
+        transition: all .2s ease-in-out;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+    }
+    
+    #yearly{
+       transform: scale(1.04); 
+    }
+      #monthly:hover, #yearly:hover{
+        
+          transform: scale(1.08);
+            overflow: hidden;
+          z-index:1000;
+          box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     
     .panel{
@@ -67,11 +84,10 @@ body.payment, body.signup{
         #monthly, #yearly{
             background:#fff;
             padding:20px;
-            box-shadow:0px 0px 4px rgba(0,0,0,0.2);
+           
         }
         .promoted{
-             transform: scale(1.08);
-            overflow: hidden;
+           overflow: hidden;
         }
         
         h2{

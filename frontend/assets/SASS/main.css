@@ -926,40 +926,40 @@ fieldset[disabled] .btn-warning.active {
     height: 2px;
     width: 40px;
     margin: 20px auto; }
-  /* line 13, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 14, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .pricing-panel {
     padding: 30px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); }
-    /* line 16, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+    /* line 17, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
     #pricing .pricing-panel h2 {
       font-size: 2em;
       color: #0190da; }
-    /* line 20, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+    /* line 21, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
     #pricing .pricing-panel .btn {
       margin: 30px 0px;
       color: #fff; }
-    /* line 24, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+    /* line 25, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
     #pricing .pricing-panel a.pricing-contact {
       font-weight: 800;
       color: #58b889; }
-  /* line 30, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 31, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .pricing-panel.panel-body {
     text-align: center; }
-  /* line 39, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 40, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing #plan1, #pricing #plan1 ul, #pricing #plan1 ul li, #pricing #plan2, #pricing #plan2 ul, #pricing #plan2 ul li, #pricing #plan3, #pricing #plan3 ul, #pricing #plan3 ul li, #pricing #plan4, #pricing #plan4 ul, #pricing #plan4 ul li {
     margin: 0;
     padding: 0;
     list-style: none; }
-  /* line 44, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 45, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing #pricePlans:after {
     content: '';
     display: table;
     clear: both; }
-  /* line 49, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 50, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing #pricePlans {
     zoom: 1;
     max-width: 69em; }
-  /* line 53, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 54, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing #pricePlans #plan1 .plan, #pricing #pricePlans #plan2 .plan, #pricing #pricePlans #plan3 .plan, #pricing #pricePlans #plan4 .plan {
     background: #fff;
     float: left;
@@ -968,24 +968,24 @@ fieldset[disabled] .btn-warning.active {
     border-radius: 5px;
     margin: 0 0 20px;
     border: 1px solid #f0f0f0; }
-  /* line 62, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 63, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .title h2 {
     font-size: 2.125em;
     font-weight: 300;
     color: #3e4f6a;
     margin: 0;
     padding: .6em 0; }
-  /* line 69, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 70, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .title h2.bestPlanTitle {
     background: #1F2329;
     color: #fff;
     border-radius: 5px 5px 0 0; }
-  /* line 74, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 75, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .title h2.freePlanTitle {
     background: #1F2329;
     color: #fff;
     border-radius: 5px 5px 0 0; }
-  /* line 79, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 80, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .price p {
     background: #1F2329;
     color: #fff;
@@ -994,19 +994,19 @@ fieldset[disabled] .btn-warning.active {
     height: 2.6em;
     line-height: 2.6em;
     margin: 0 0 1em; }
-  /* line 88, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 89, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .options {
     margin-top: 10em; }
-  /* line 91, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 92, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .options li {
     font-weight: 700;
     color: #364762;
     line-height: 2.5; }
-  /* line 96, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 97, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .options li span {
     font-weight: 400;
     color: #979797; }
-  /* line 100, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 101, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .button a {
     text-transform: uppercase;
     text-decoration: none;
@@ -1019,42 +1019,42 @@ fieldset[disabled] .btn-warning.active {
     width: 80%;
     height: 2.8em;
     margin: 1.5em 0 1.8em; }
-  /* line 113, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 114, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .button a.bestPlanButton, #pricing .planContainer .button a.freePlanButton {
     color: #fff; }
-  /* line 116, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 117, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing #pricePlans {
     margin: 2em auto; }
-  /* line 119, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 120, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing #pricePlans #plan1 > li:last-child, #pricing #pricePlans #plan2 > li:last-child, #pricing #pricePlans #plan3 > li:last-child, #pricing #pricePlans #plan4 > li:last-child {
     margin-right: 0; }
-  /* line 122, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 123, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing #pricePlans #plan1 .plan:hover, #pricing #pricePlans #plan2 .plan:hover, #pricing #pricePlans #plan3 .plan:hover, #pricing #pricePlans #plan4 .plan:hover {
     -webkit-transform: scale(1.04);
     -moz-transform: scale(1.04);
     -ms-transform: scale(1.04);
     -o-transform: scale(1.04);
     transform: scale(1.04); }
-  /* line 129, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 130, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .button a {
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
     -o-transition: all 0.25s;
     transition: all 0.25s; }
-  /* line 136, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 137, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .button a:hover {
     background: #1F2329;
     color: #fff; }
-  /* line 140, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 141, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .button a.bestPlanButton, #pricing .planContainer .price p.bestPlanPrice, #pricing .planContainer .button a.bestPlanButton {
     background: #0190da;
     border: 2px solid #0190da; }
-  /* line 144, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 145, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .button a.freePlanButton, #pricing .planContainer .price p.freePlanPrice, #pricing .planContainer .button a.freePlanButton {
     background: #58b889;
     border: 2px solid #58b889; }
-  /* line 148, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
+  /* line 149, /Users/mark/appsson-theme/frontend/assets/SASS/_pricing.scss */
   #pricing .planContainer .button a.bestPlanButton:hover {
     background: #0190da;
     border: 2px solid #0190da; }
@@ -1413,7 +1413,7 @@ fieldset[disabled] .btn-warning.active {
 
 /* line 1, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
 body.payment, body.signup {
-  background-color: #ffffff; }
+  background-color: #eeeded; }
 
 /* line 5, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
 .navbar-wrapper .navbar-default {
@@ -1443,61 +1443,73 @@ body.payment, body.signup {
     width: 40px;
     margin: 20px auto; }
   /* line 36, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  #payment #monthly, #payment #yearly {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.2s ease-in-out; }
+  /* line 42, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  #payment #yearly {
+    transform: scale(1.04); }
+  /* line 45, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  #payment #monthly:hover, #payment #yearly:hover {
+    transform: scale(1.08);
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  /* line 53, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment .panel {
     margin-top: 30px;
     margin-bottom: 30px; }
-  /* line 41, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 58, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment .pricing-panel {
     margin: 20px;
     padding: 10px; }
-    /* line 44, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 61, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment .pricing-panel h2 {
       font-size: 2em;
       color: #0190da; }
-    /* line 48, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 65, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment .pricing-panel .btn {
       margin: 30px 0px;
       color: #fff; }
-    /* line 52, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 69, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment .pricing-panel a.pricing-contact {
       font-weight: 800;
       color: #58b889; }
-  /* line 58, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 75, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment .pricing-panel.panel-body {
     text-align: center; }
-  /* line 64, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 81, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment #paymentOptions {
     margin: 30px 0px; }
-    /* line 67, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 84, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment #paymentOptions #monthly, #payment #paymentOptions #yearly {
       background: #fff;
-      padding: 20px;
-      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); }
-    /* line 72, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+      padding: 20px; }
+    /* line 89, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment #paymentOptions .promoted {
-      transform: scale(1.08);
       overflow: hidden; }
-    /* line 77, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 93, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment #paymentOptions h2 {
       font-size: 2em; }
-    /* line 80, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 96, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment #paymentOptions h3 {
       font-size: 2.6em; }
-    /* line 83, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 99, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment #paymentOptions h3.selected {
       color: #0190da; }
-    /* line 86, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 102, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment #paymentOptions span {
       display: block;
       margin-top: 20px;
       margin-bottom: 30px; }
-    /* line 91, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+    /* line 107, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
     #payment #paymentOptions button {
       font-size: 2.6em;
       margin-top: 40px;
       padding-left: 50px;
       padding-right: 50px; }
-  /* line 98, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 114, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment .corner-ribbon {
     width: 200px;
     background: #e43;
@@ -1510,56 +1522,56 @@ body.payment, body.signup {
     color: #f0f0f0;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
-  /* line 111, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 127, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment .corner-ribbon.shadow {
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
-  /* line 114, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 130, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment .corner-ribbon.top-left {
     top: 25px;
     left: -50px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg); }
-  /* line 122, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 138, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label.btn span {
     font-size: 1.5em; }
-  /* line 126, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 142, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="radio"] ~ i.fa.fa-circle-o {
     color: #c8c8c8;
     display: inline; }
-  /* line 129, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 145, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="radio"] ~ i.fa.fa-check-circle-o {
     display: none; }
-  /* line 132, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 148, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="radio"]:checked ~ i.fa.fa-circle-o {
     display: none; }
-  /* line 135, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 151, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="radio"]:checked ~ i.fa.fa-check-circle-o {
     color: #7AA3CC;
     display: inline; }
-  /* line 138, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 154, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label:hover input[type="radio"] ~ i.fa {
     color: #7AA3CC; }
-  /* line 142, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 158, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="checkbox"] ~ i.fa.fa-square-o {
     color: #c8c8c8;
     display: inline; }
-  /* line 145, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 161, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="checkbox"] ~ i.fa.fa-check-square-o {
     display: none; }
-  /* line 148, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 164, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="checkbox"]:checked ~ i.fa.fa-square-o {
     display: none; }
-  /* line 151, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 167, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o {
     color: #7AA3CC;
     display: inline; }
-  /* line 154, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 170, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment label:hover input[type="checkbox"] ~ i.fa {
     color: #7AA3CC; }
-  /* line 158, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 174, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment div[data-toggle="buttons"] label.active {
     color: #7AA3CC; }
-  /* line 162, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 178, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment div[data-toggle="buttons"] label {
     display: inline-block;
     padding: 6px 12px;
@@ -1580,10 +1592,10 @@ body.payment, body.signup {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none; }
-  /* line 185, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 201, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment div[data-toggle="buttons"] label:hover {
     color: #7AA3CC; }
-  /* line 189, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
+  /* line 205, /Users/mark/appsson-theme/frontend/assets/SASS/_payment.scss */
   #payment div[data-toggle="buttons"] label:active, #payment div[data-toggle="buttons"] label.active {
     -webkit-box-shadow: none;
     box-shadow: none; }
